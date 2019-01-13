@@ -5,6 +5,4 @@ date: '2018-01-12'
 tags: ['introduction']
 ---
 
-## Hello World!
-
 Lorem ipsum dolores violent delights.
