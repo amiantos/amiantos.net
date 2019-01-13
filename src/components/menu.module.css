@@ -1,0 +1,14 @@
+.menu {
+  display:flex;
+  justify-content:center;
+  list-style: none;
+  border-bottom: 1px solid #eee;
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+.menu li {
+  padding: 0.5875rem 0.5875rem;
+  margin:0px;
+  display:flex;
+}

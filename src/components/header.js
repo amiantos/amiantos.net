@@ -8,11 +8,11 @@ const Header = ({ siteTitle }) => (
       margin: `0 auto`,
       maxWidth: 960,
       background: `white`,
+      textAlign: `center`,
     }}
   >
     <div
       style={{
-        marginBottom: `1.45rem`,
         padding: `1.45rem 1.0875rem`,
         borderBottom: `1px solid #eee`,
       }}
