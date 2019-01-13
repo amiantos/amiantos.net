@@ -8,6 +8,7 @@ const Header = ({ siteTitle }) => (
       margin: `0 auto`,
       maxWidth: 960,
       background: `white`,
+      textAlign: `center`,
     }}
   >
     <div

@@ -11,11 +11,7 @@
   color: #333;
 }
 
-.link {
-  text-decoration: none!important;
-}
-
-.link h1 {
+.title {
   font-weight: 500;
   font-size: 1.5rem;
   margin-bottom: 0px;
@@ -25,9 +21,10 @@
   color: #333;
 }
 
-.link span {
+.date {
   display: block;
   margin-top: 0.5rem;
   margin-bottom: 1.2rem;
   font-size: 0.8rem;
+  text-decoration: none;
 }

@@ -27,7 +27,7 @@ export const listQuery = graphql`
           fields{
             slug
           }
-          html
+          excerpt(pruneLength: 250)
           frontmatter {
             date(formatString: "MMM Do YYYY")
             title
