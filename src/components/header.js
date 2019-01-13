@@ -12,7 +12,6 @@ const Header = ({ siteTitle }) => (
   >
     <div
       style={{
-        marginBottom: `1.45rem`,
         padding: `1.45rem 1.0875rem`,
         borderBottom: `1px solid #eee`,
       }}

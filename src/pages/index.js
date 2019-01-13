@@ -3,7 +3,7 @@ import { Link, graphql } from 'gatsby'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import indexStyles from './index.module.css'
+import Post from '../components/post'
 
 const IndexPage = props => {
   const postList = props.data.allMarkdownRemark
@@ -11,15 +11,7 @@ const IndexPage = props => {
     <Layout>
       <SEO title="home" keywords={[`gatsby`, `application`, `react`]} />
       {postList.edges.map(({ node }, i) => (
-        <div className={indexStyles.postContainer}>
-          <Link to={node.fields.slug} key={i} className="link">
-            <div className="post-list">
-              <h1>{node.frontmatter.title}</h1>
-              <span>{node.frontmatter.date}</span>
-            </div>
-          </Link>
-          <div dangerouslySetInnerHTML={{ __html: node.html }} />
-        </div>
+        <Post data={node} i={i} />
       ))}
     </Layout>
   )
