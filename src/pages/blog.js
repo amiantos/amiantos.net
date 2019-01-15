@@ -9,6 +9,7 @@ const BlogPage = props => {
   return (
     <Layout>
       <SEO title="archive" keywords={[`blog`, `archive`]} />
+      <h1>Blog Archive</h1>
       <ul>
         {postList.edges.map(({ node }, i) => (
           <li>
