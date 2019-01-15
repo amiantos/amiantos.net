@@ -9,7 +9,7 @@ export default ({ data }) => {
     <Layout>
       <div class={postStyles.container}>
         <h1 className={postStyles.title}>{post.frontmatter.title}</h1>
-        <Link to={ post.fields.slug } className={postStyles.date}>
+        <Link to={post.fields.slug} className={postStyles.date}>
           <span>{post.frontmatter.date}</span>
         </Link>
         <div className={postStyles.post} dangerouslySetInnerHTML={{ __html: post.html }} />
