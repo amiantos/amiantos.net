@@ -20,7 +20,7 @@ const IndexPage = props => {
 export default IndexPage
 
 export const listQuery = graphql`
-  query ListQuery {
+  query {
     allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
       edges {
         node {

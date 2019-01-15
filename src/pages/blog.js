@@ -11,7 +11,13 @@ const BlogPage = props => {
       <SEO title="archive" keywords={[`blog`, `archive`]} />
       <ul>
         {postList.edges.map(({ node }, i) => (
-          <li><Link to={node.fields.slug} key={i}>{node.frontmatter.title}</Link> - {node.frontmatter.date}</li>
+          <li>
+            {node.frontmatter.date}
+            {` `}-{` `}
+            <Link to={node.fields.slug} key={i}>
+              {node.frontmatter.title}
+            </Link>
+          </li>
         ))}
       </ul>
     </Layout>
@@ -21,7 +27,7 @@ const BlogPage = props => {
 export default BlogPage
 
 export const tocQuery = graphql`
-query{
+  query {
     allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }){
       edges{
         node{
@@ -30,9 +36,10 @@ query{
           }
           frontmatter {
             title
-            date(formatString: "MMM Do YYYY")
+            date(formatString: "YYYY-MM-DD")
           }
         }
       }
     }
-  }`
+  }
+`
