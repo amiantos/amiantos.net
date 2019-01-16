@@ -20,11 +20,11 @@ module.exports = {
         path: `${__dirname}/src/posts`,
       },
     },
-    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          `gatsby-remark-copy-linked-files`,
           {
             resolve: `gatsby-remark-images`,
             options: {
@@ -34,20 +34,25 @@ module.exports = {
         ],
       }
     },
-    `gatsby-remark-copy-linked-files`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `amiantos-net`,
+        short_name: `amiantos`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `white`,
+        theme_color: `white`,
         display: `minimal-ui`,
-        icon: `src/images/amiantos-logo.png`, // This path is relative to the root of the site.
+        icon: `src/images/amiantos-logo.png`,
       },
+    },
+    {
+      resolve: `gatsby-plugin-favicon`,
+      options: {
+        logo: `./src/images/amiantos-logo.png`
+      }
     },
     {
       resolve: `gatsby-plugin-google-analytics`,
@@ -55,8 +60,6 @@ module.exports = {
         trackingId: 'UA-256503-23'
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
   ],
 }
