@@ -1,9 +1,9 @@
 import React from 'react'
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import Post from '../components/post'
+import Excerpt from '../components/excerpt'
 
 const IndexPage = props => {
   const postList = props.data.allMarkdownRemark
@@ -11,7 +11,7 @@ const IndexPage = props => {
     <Layout>
       <SEO title="home" keywords={[`gatsby`, `application`, `react`]} />
       {postList.edges.map(({ node }, i) => (
-        <Post data={node} i={i} />
+        <Excerpt data={node} i={i} />
       ))}
     </Layout>
   )

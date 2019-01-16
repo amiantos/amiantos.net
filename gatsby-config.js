@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `amiantos.net`,
     author: `Brad Root`,
+    description: `Personal blog covering topics such as dogs, programming, cycling, and more.`,
     homeCity: `Los Angeles`,
   },
   plugins: [
