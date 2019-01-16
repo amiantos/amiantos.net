@@ -1,10 +1,12 @@
 module.exports = {
   siteMetadata: {
     title: `amiantos.net`,
-    description: `Brad Root's blog`,
-    author: `@amiantos`,
+    author: `Brad Root`,
+    description: `Personal blog covering topics such as dogs, programming, cycling, and more.`,
+    homeCity: `Los Angeles`,
   },
   plugins: [
+    `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -20,20 +22,39 @@ module.exports = {
         path: `${__dirname}/src/posts`,
       },
     },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          `gatsby-remark-copy-linked-files`,
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 960,
+            },
+          },
+        ],
+      }
+    },
     `gatsby-transformer-sharp`,
-    `gatsby-transformer-remark`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `amiantos.net`,
+        short_name: `amiantos`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `white`,
+        theme_color: `white`,
         display: `minimal-ui`,
-        icon: `src/images/amiantos-logo.png`, // This path is relative to the root of the site.
+        icon: `src/images/amiantos-logo.png`,
       },
+    },
+    {
+      resolve: `gatsby-plugin-favicon`,
+      options: {
+        logo: `./src/images/amiantos-logo.png`
+      }
     },
     {
       resolve: `gatsby-plugin-google-analytics`,
@@ -41,8 +62,6 @@ module.exports = {
         trackingId: 'UA-256503-23'
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
   ],
 }
