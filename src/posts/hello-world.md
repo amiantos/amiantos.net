@@ -1,7 +1,7 @@
 ---
 title: Hello World!
-description: My first blog post
 date: '2018-01-11'
+type: 'text'
 tags: ['introduction']
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Gatsby on AWS S3 and CloudFront
-description: How I got this Gatsby site working on Cloudfront
 date: '2018-01-13'
+type: 'text'
 tags: ['programming', 'gatsby', 'aws', 'serverless']
 ---
 

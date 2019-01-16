@@ -2,6 +2,7 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import Layout from '../components/layout'
 import styled from 'styled-components'
+import Img from 'gatsby-image'
 
 const Post = styled.div`
   margin-bottom: 3rem;
@@ -34,6 +35,10 @@ const DateLink = styled(Link)`
   text-decoration: none;
 `
 
+const Image = styled(Img)`
+  margin-bottom:1.2em;
+`
+
 export default ({ data }) => {
   const post = data.markdownRemark
   return (
@@ -43,6 +48,9 @@ export default ({ data }) => {
         <DateLink to={post.fields.slug}>
           {post.frontmatter.date}
         </DateLink>
+        {post.frontmatter.image && (
+          <Image fluid={post.frontmatter.image.childImageSharp.fluid} />
+        )}
         <Content dangerouslySetInnerHTML={{ __html: post.html }} />
       </Post>
     </Layout>
@@ -58,7 +66,16 @@ export const query = graphql`
       html
       frontmatter {
         title
+        type
         date(formatString: "MMM Do YYYY")
+        image {
+          publicURL
+          childImageSharp{
+            fluid(maxWidth: 2000) {
+              ...GatsbyImageSharpFluid_noBase64
+            }
+          }
+        }
       }
     }
   }

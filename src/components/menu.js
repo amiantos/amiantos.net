@@ -6,7 +6,6 @@ const Menu = styled.ul`
   display: flex;
   justify-content: center;
   list-style: none;
-  border-bottom: 1px solid #eee;
   margin: 0 auto;
   max-width: 960px;
 `
