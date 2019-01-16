@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `amiantos.net`,
-    description: `Brad Root's blog`,
-    author: `@amiantos`,
+    author: `Brad Root`,
+    homeCity: `Los Angeles`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -28,7 +28,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 1080,
+              maxWidth: 960,
             },
           },
         ],
@@ -39,7 +39,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `amiantos-net`,
+        name: `amiantos.net`,
         short_name: `amiantos`,
         start_url: `/`,
         background_color: `white`,
