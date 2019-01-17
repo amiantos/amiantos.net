@@ -6,15 +6,15 @@ import  { UpDownWide, UpDown } from '../styles/animations'
 import tw from 'tailwind.macro'
 
 const Container = styled.div`
-  ${ tw`container mx-auto px-4 flex` }
+  ${ tw`container flex items-center` }
 `
 
 const Image = styled(Img)`
-  ${ tw`w-1/4` };
+  ${ tw`w-full shadow-md hover:shadow-lg` };
 `
 
 const Box = styled.div`
-  ${ tw`flex-1` };
+  ${ tw`flex-1 p-2` };
 `
 
 export default ({ data }) => {

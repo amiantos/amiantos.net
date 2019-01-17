@@ -2,6 +2,7 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import Layout from '../components/layout'
 import styled from 'styled-components'
+import tw from 'tailwind.macro'
 import Img from 'gatsby-image'
 
 const Post = styled.div`
@@ -25,6 +26,7 @@ const Title = styled.h1`
   padding-bottom: 0.5rem;
   border-bottom: 1px solid #eee;
   color: #333;
+  ${ tw`font-sans` };
 `
 
 const DateLink = styled(Link)`
@@ -33,6 +35,7 @@ const DateLink = styled(Link)`
   margin-bottom: 1.2rem;
   font-size: 0.8rem;
   text-decoration: none;
+  ${ tw`font-sans` };
 `
 
 const Image = styled(Img)`
@@ -72,7 +75,7 @@ export const query = graphql`
           publicURL
           childImageSharp{
             fluid(maxWidth: 2000) {
-              ...GatsbyImageSharpFluid_noBase64
+              ...GatsbyImageSharpFluid
             }
           }
         }

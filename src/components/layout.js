@@ -6,6 +6,7 @@ import tw from 'tailwind.macro'
 import Header from './header'
 import Footer from './footer'
 import Menu from './menu'
+import '../styles/main.css'
 
 const Container = styled.div`
   ${ tw`container max-w-lg mx-auto` }
