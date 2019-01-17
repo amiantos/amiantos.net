@@ -37,7 +37,7 @@ const Excerpt = styled.div`
 
 export default ({ data, i }) => (
   <Container>
-    <ExcerptLink to={data.fields.slug} key={i}>
+    <ExcerptLink to={data.fields.slug}>
       <Title>{data.frontmatter.title}</Title>
       <Date>{data.frontmatter.date}</Date>
       <Excerpt>

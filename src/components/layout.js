@@ -1,11 +1,15 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
-
+import styled from 'styled-components'
+import tw from 'tailwind.macro'
 import Header from './header'
 import Footer from './footer'
-import Menu from './menu';
-import './layout.css'
+import Menu from './menu'
+
+const Container = styled.div`
+  ${ tw`container max-w-lg mx-auto` }
+`
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -19,21 +23,14 @@ const Layout = ({ children }) => (
       }
     `}
     render={data => (
-      <>
+      <Container>
         <Header siteTitle={data.site.siteMetadata.title} />
         <Menu />
-        <div
-          style={{
-            margin: `0 auto`,
-            maxWidth: 960,
-            padding: `0px 1.0875rem 1.45rem`,
-            paddingTop: `1.0875rem`,
-          }}
-        >
+        <div>
           {children}
         </div>
         <Footer />
-      </>
+      </Container>
     )}
   />
 )

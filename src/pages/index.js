@@ -14,7 +14,7 @@ const IndexPage = props => {
       <SEO title="home" keywords={[`gatsby`, `application`, `react`]} />
       <PhotoBar data={imageList} />
       {postList.edges.map(({ node }, i) => (
-        <Excerpt data={node} i={i} />
+        <Excerpt data={node} i={i} key={i} />
       ))}
     </Layout>
   )
@@ -55,8 +55,8 @@ export const query = graphql`{
           image {
             publicURL
             childImageSharp{
-              fixed(height: 200) {
-                ...GatsbyImageSharpFixed
+              fluid(maxHeight: 500) {
+                ...GatsbyImageSharpFluid
               }
             }
           }

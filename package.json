@@ -27,6 +27,7 @@
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-helmet": "^5.2.0",
+    "react-spring": "^7.2.8",
     "styled-components": "^4.1.3"
   },
   "keywords": [
@@ -42,13 +43,16 @@
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
+    "babel-plugin-macros": "^2.4.5",
     "eslint": "^5.12.0",
     "eslint-config-standard": "^12.0.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-node": "^8.0.1",
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-react": "^7.12.3",
-    "eslint-plugin-standard": "^4.0.0"
+    "eslint-plugin-standard": "^4.0.0",
+    "tailwind.macro": "^0.5.10",
+    "tailwindcss": "^0.7.3"
   },
   "repository": {
     "type": "git",

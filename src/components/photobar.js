@@ -1,30 +1,31 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
-import styled from 'styled-components'
+import styled, { keyframes, css } from 'styled-components'
 import Img from 'gatsby-image'
+import  { UpDownWide, UpDown } from '../styles/animations'
+import tw from 'tailwind.macro'
 
 const Container = styled.div`
-  margin: 0 auto;
-  max-width: 960;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 1.2em;
+  ${ tw`container mx-auto px-4 flex` }
 `
 
 const Image = styled(Img)`
-  height: 200px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  ${ tw`w-1/4` };
+`
+
+const Box = styled.div`
+  ${ tw`flex-1` };
 `
 
 export default ({ data }) => {
   return (
     <Container>
       {data.edges.map(({ node }, i) => (
-        <div>
+        <Box key={i}>
           <Link to={node.fields.slug}>
-            <Image fixed={node.frontmatter.image.childImageSharp.fixed} />
+            <Image fluid={node.frontmatter.image.childImageSharp.fluid} />
           </Link>
-        </div>
+        </Box>
       ))}
     </Container>
   )

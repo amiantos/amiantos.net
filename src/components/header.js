@@ -1,6 +1,12 @@
 import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import React from 'react'
+import styled from 'styled-components'
+import tw from 'tailwind.macro'
+
+const Title = styled.h1`
+${ tw`font-serif` }
+`
 
 const Header = ({ siteTitle }) => (
   <div
@@ -17,7 +23,7 @@ const Header = ({ siteTitle }) => (
         borderBottom: `1px solid #eee`,
       }}
     >
-      <h1
+      <Title
         style={{
           margin: 0,
           fontWeight: 200,
@@ -32,7 +38,7 @@ const Header = ({ siteTitle }) => (
         >
           {siteTitle}
         </Link>
-      </h1>
+      </Title>
     </div>
   </div>
 )
