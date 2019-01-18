@@ -1,11 +1,10 @@
 import React from 'react'
 
-import Layout from '../components/layout'
 import SEO from '../components/seo'
 
 const AboutPage = props => {
   return (
-    <Layout>
+    <>
       <SEO title="about" keywords={[`brad root`, `brad`, `root`, `about`]} />
       <h1>About</h1>
       <p>Hi! I'm <a href="http://bradroot.me">Brad</a>.</p>
@@ -21,7 +20,7 @@ const AboutPage = props => {
       <p>
         You can view the source code for this site on <a href="https://www.github.com/amiantos/amiantos.net">GitHub</a>.
       </p>
-    </Layout>
+    </>
   )
 }
 

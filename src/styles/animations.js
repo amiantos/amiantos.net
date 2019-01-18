@@ -50,10 +50,10 @@ const leftRight = keyframes`
 
 const orbit = keyframes`
   from {
-    transform: rotate(0deg) translateX(30px) rotate(0deg);
+    transform: rotate(0deg) translateX(1px);
   }
   to {
-    transform: rotate(360deg) translateX(30px) rotate(-360deg);
+    transform: rotate(360deg) translateX(1px);
   }
 `
 

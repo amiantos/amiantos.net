@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
-import Layout from '../components/layout'
 import styled from 'styled-components'
 import tw from 'tailwind.macro'
 import Img from 'gatsby-image'
@@ -45,7 +44,7 @@ const Image = styled(Img)`
 export default ({ data }) => {
   const post = data.markdownRemark
   return (
-    <Layout>
+    <>
       <Post>
         <Title>{post.frontmatter.title}</Title>
         <DateLink to={post.fields.slug}>
@@ -56,7 +55,7 @@ export default ({ data }) => {
         )}
         <Content dangerouslySetInnerHTML={{ __html: post.html }} />
       </Post>
-    </Layout>
+    </>
   )
 }
 

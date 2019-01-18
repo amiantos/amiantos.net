@@ -3,7 +3,6 @@ import { graphql } from 'gatsby'
 import styled from 'styled-components'
 import tw from 'tailwind.macro'
 
-import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Excerpt from '../components/excerpt'
 import PhotoBar from '../components/photobar'
@@ -16,15 +15,15 @@ const IndexPage = props => {
   const postList = props.data.text
   const imageList = props.data.image
   return (
-    <Layout>
-      <SEO title="home" keywords={[`gatsby`, `application`, `react`]} />
-      <PhotoBar data={imageList} />
-      <ExcerptContainer>
-        {postList.edges.map(({ node }, i) => (
-          <Excerpt data={node} i={i} key={i} />
-        ))}
-      </ExcerptContainer>
-    </Layout>
+    <>
+        <SEO title="home" keywords={[`gatsby`, `application`, `react`]} />
+        <PhotoBar data={imageList} />
+        <ExcerptContainer>
+          {postList.edges.map(({ node }, i) => (
+            <Excerpt data={node} i={i} key={i} />
+          ))}
+        </ExcerptContainer>
+    </>
   )
 }
 

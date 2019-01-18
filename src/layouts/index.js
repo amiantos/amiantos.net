@@ -4,12 +4,12 @@ import GlobalStyle from '../styles/global'
 import { StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
 import tw from 'tailwind.macro'
-import Header from './header'
-import Footer from './footer'
-import Menu from './menu'
+import Header from '../components/header'
+import Footer from '../components/footer'
+import Menu from '../components/menu'
 
 const Container = styled.div`
-  ${ tw`absolute max-w-lg mx-auto z-40` }
+  ${ tw`relative max-w-lg mx-auto z-40` }
 `
 
 const Layout = ({ children }) => (

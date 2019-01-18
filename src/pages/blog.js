@@ -1,13 +1,12 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 
-import Layout from '../components/layout'
 import SEO from '../components/seo'
 
 const BlogPage = props => {
   const postList = props.data.allMarkdownRemark
   return (
-    <Layout>
+    <>
       <SEO title="archive" keywords={[`blog`, `archive`]} />
       <h1>Blog Archive</h1>
       <ul>
@@ -21,7 +20,7 @@ const BlogPage = props => {
           </li>
         ))}
       </ul>
-    </Layout>
+    </>
   )
 }
 

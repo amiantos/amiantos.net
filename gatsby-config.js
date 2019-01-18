@@ -6,6 +6,8 @@ module.exports = {
     homeCity: `Los Angeles`,
   },
   plugins: [
+    `gatsby-plugin-layout`,
+    `gatsby-plugin-svg-sprite`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
     {
