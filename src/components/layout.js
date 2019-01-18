@@ -9,7 +9,7 @@ import Footer from './footer'
 import Menu from './menu'
 
 const Container = styled.div`
-  ${ tw`container max-w-lg mx-auto` }
+  ${ tw`container max-w-lg mx-auto z-40` }
 `
 
 const Layout = ({ children }) => (
@@ -26,8 +26,8 @@ const Layout = ({ children }) => (
     render={data => (
       <>
         <GlobalStyle />
+        <Header siteTitle={data.site.siteMetadata.title} />
         <Container>
-          <Header siteTitle={data.site.siteMetadata.title} />
           <Menu />
           <div>
             {children}

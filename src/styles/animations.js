@@ -39,6 +39,24 @@ const upDownWide = keyframes`
   }
 `
 
+const leftRight = keyframes`
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(30px);
+  }
+`
+
+const orbit = keyframes`
+  from {
+    transform: rotate(0deg) translateX(30px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(30px) rotate(-360deg);
+  }
+`
+
 const upDownAnimation = css`
   ${ upDown } 4s ease-in-out infinite alternate;
 `
@@ -47,12 +65,28 @@ const upDownWideAnimation = css`
   ${ upDownWide } 18s ease-in-out infinite alternate;
 `
 
+const leftRightAnimation = css`
+  ${ leftRight } 4s ease-in-out infinite alternate;
+`
+
+const orbitAnimation = css`
+  ${ orbit } 10s linear infinite;
+`
+
+export const Orbit = styled.div`
+  animation: ${ orbitAnimation };
+`
+
 export const UpDown = styled.div`
   animation: ${ upDownAnimation };
 `
 
 export const UpDownWide = styled.div`
   animation: ${ upDownWideAnimation };
+`
+
+export const LeftRight = styled.div`
+  animation: ${ leftRightAnimation };
 `
 
 export const waveAnimation = length => css`

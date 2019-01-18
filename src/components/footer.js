@@ -1,12 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
+import tw from 'tailwind.macro'
 
 const Footer = styled.footer`
-  margin: 0 auto;
-  max-width: 960;
-  border-top: 1px solid #eee;
-  padding: 1.45rem 1.0875rem;
-  font-size: .7rem;
+  ${ tw`p-8 font-sans text-xs text-center` }
 `
 
 export default () => (

@@ -2,7 +2,7 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import styled, { keyframes, css } from 'styled-components'
 import Img from 'gatsby-image'
-import  { UpDownWide, UpDown } from '../styles/animations'
+import  { UpDownWide, UpDown, LeftRight, Orbit } from '../styles/animations'
 import tw from 'tailwind.macro'
 
 const Container = styled.div`

@@ -1,10 +1,16 @@
 import React from 'react'
 import { graphql } from 'gatsby'
+import styled from 'styled-components'
+import tw from 'tailwind.macro'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Excerpt from '../components/excerpt'
 import PhotoBar from '../components/photobar'
+
+const ExcerptContainer = styled.div`
+  ${ tw`md:flex md:flex-wrap z-40` }
+`
 
 const IndexPage = props => {
   const postList = props.data.text
@@ -13,9 +19,11 @@ const IndexPage = props => {
     <Layout>
       <SEO title="home" keywords={[`gatsby`, `application`, `react`]} />
       <PhotoBar data={imageList} />
-      {postList.edges.map(({ node }, i) => (
-        <Excerpt data={node} i={i} key={i} />
-      ))}
+      <ExcerptContainer>
+        {postList.edges.map(({ node }, i) => (
+          <Excerpt data={node} i={i} key={i} />
+        ))}
+      </ExcerptContainer>
     </Layout>
   )
 }

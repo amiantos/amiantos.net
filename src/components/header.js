@@ -5,42 +5,22 @@ import styled from 'styled-components'
 import tw from 'tailwind.macro'
 
 const Title = styled.h1`
-${ tw`font-serif` }
+  ${ tw`fixed font-serif z-0` }
+`
+
+const Spacer = styled.div`
+  ${ tw`h-48` }
 `
 
 const Header = ({ siteTitle }) => (
-  <div
-    style={{
-      margin: `0 auto`,
-      maxWidth: 960,
-      background: `white`,
-      textAlign: `center`,
-    }}
-  >
-    <div
-      style={{
-        padding: `1.45rem 1.0875rem`,
-        borderBottom: `1px solid #eee`,
-      }}
-    >
-      <Title
-        style={{
-          margin: 0,
-          fontWeight: 200,
-        }}
-      >
-        <Link
-          to="/"
-          style={{
-            color: `black`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </Title>
-    </div>
-  </div>
+  <>
+    <Title>
+      <Link to="/">
+        {siteTitle}
+      </Link>
+    </Title>
+    <Spacer />
+  </>
 )
 
 Header.propTypes = {

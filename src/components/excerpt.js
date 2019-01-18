@@ -1,48 +1,43 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
+import tw from 'tailwind.macro'
 
-const Container = styled.div`
-  margin-bottom: 3rem;
-  color: #333;
-`
-
-const ExcerptLink = styled(Link)`
-  text-decoration: none!important;
-`
-
-const Title = styled.h1`
-  font-weight: 500;
-  font-size: 1.5rem;
-  margin-bottom: 0px;
-  margin-top: 1.5rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 1px solid #eee;
-  color: #333;
-`
-
-const Date = styled.div`
-  margin-top: 0.5rem;
-  margin-bottom: 1.2rem;
-  font-size: 0.8rem;
+const ExcerptContainer = styled.div`
+  ${ tw`md:w-1/2 md:flex-grow p-4` }
 `
 
 const Excerpt = styled.div`
-  font-size: 0.9rem;
-  font-weight: 400;
-  line-height: 1.58rem;
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-  color: #333;
+  ${ tw`bg-white rounded shadow-lg` }
+`
+
+const ExcerptLink = styled(Link)`
+  ${ tw`block no-underline` }
+`
+
+const Title = styled.div`
+  ${ tw`font-sans bg-blue-darkest text-xl text-grey-lightest p-6` };
+`
+
+const Date = styled.div`
+  ${ tw`font-sans bg-grey-lightest text-xs text-right text-grey-dark p-4` };
+  border-top: 1px solid #eee;
+`
+
+const Content = styled.div`
+  ${ tw`font-serif text-black leading-normal p-6` };
 `
 
 export default ({ data, i }) => (
-  <Container>
-    <ExcerptLink to={data.fields.slug}>
-      <Title>{data.frontmatter.title}</Title>
-      <Date>{data.frontmatter.date}</Date>
-      <Excerpt>
-        {!data.excerpt ? '[photo]' : data.excerpt}
-      </Excerpt>
-    </ExcerptLink>
-  </Container>
+  <ExcerptContainer>
+    <Excerpt>
+      <ExcerptLink to={data.fields.slug}>
+        <Title>{data.frontmatter.title}</Title>
+        <Content>
+          {!data.excerpt ? '[photo]' : data.excerpt}
+        </Content>
+        <Date>{data.frontmatter.date}</Date>
+      </ExcerptLink>
+    </Excerpt>
+  </ExcerptContainer>
 )
