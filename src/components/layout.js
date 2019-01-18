@@ -9,7 +9,7 @@ import Footer from './footer'
 import Menu from './menu'
 
 const Container = styled.div`
-  ${ tw`container max-w-lg mx-auto z-40` }
+  ${ tw`absolute max-w-lg mx-auto z-40` }
 `
 
 const Layout = ({ children }) => (
