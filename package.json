@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "amiantos-net",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Personal blog",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Brad Root <bradroot@me.com>",
   "dependencies": {
     "acorn": "^6.0.5",
     "babel-plugin-styled-components": "^1.10.0",
