@@ -16,8 +16,8 @@ const Title = styled.div`
   ${ tw`font-sans bg-blue-darkest text-xl text-grey-lightest p-6` };
 `
 
-const DateLink = styled.div`
-  ${ tw`font-sans no-underline bg-grey-lightest text-xs text-right text-grey-dark p-4` };
+const DateLink = styled(Link)`
+  ${ tw`block font-sans no-underline bg-grey-lightest text-xs text-right text-grey-dark p-4` };
   border-top: 1px solid #eee;
 `
 
