@@ -9,7 +9,7 @@ const PostContainer = styled.div`
 `
 
 const Post = styled.div`
-  ${ tw`bg-white rounded shadow-lg` }
+  ${ tw`bg-white rounded shadow-lg overflow-hidden` }
 `
 
 const Title = styled.div`

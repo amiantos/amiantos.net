@@ -8,7 +8,7 @@ const ExcerptContainer = styled.div`
 `
 
 const Excerpt = styled.div`
-  ${ tw`bg-white rounded shadow-lg` }
+  ${ tw`bg-white rounded shadow-lg overflow-hidden` }
 `
 
 const ExcerptLink = styled(Link)`

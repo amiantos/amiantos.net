@@ -9,7 +9,7 @@ const Text = styled.div`
 `
 
 const Title = styled.div`
-  ${ tw`w-full h-48 font-serif z-0 flex items-center` }
+  ${ tw`w-full pt-10 font-serif z-0 flex items-center` }
 `
 const StyledLink = styled(Link)`
   ${ tw`flex-none text-center mx-auto no-underline` }

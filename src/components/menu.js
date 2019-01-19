@@ -1,32 +1,31 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
+import tw from 'tailwind.macro'
 
 const Menu = styled.ul`
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  margin: 0 auto;
-  max-width: 960px;
+  ${ tw`flex items-center justify-center list-reset mx-auto pb-5` }
 `
 
 const MenuItem = styled.li`
-  padding: 0.5875rem 0.5875rem;
-  margin: 0px;
-  display: flex;
+  ${ tw`flex-shrink p-2` }
+`
+
+const MenuLink = styled(Link)`
+  ${ tw`font-sans no-underline` }
 `
 
 export default () => {
   return (
     <Menu>
       <MenuItem>
-        <Link to='/' style={{ textDecoration: 'none' }}>Home</Link>
+        <MenuLink to='/'>Home</MenuLink>
       </MenuItem>
       <MenuItem>
-        <Link to='/about' style={{ textDecoration: 'none' }}>About</Link>
+        <MenuLink to='/about'>About</MenuLink>
       </MenuItem>
       <MenuItem>
-        <Link to='/blog' style={{ textDecoration: 'none' }}>Archive</Link>
+        <MenuLink to='/blog'>Archive</MenuLink>
       </MenuItem>
     </Menu>
   )

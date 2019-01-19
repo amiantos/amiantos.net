@@ -1,8 +1,7 @@
 import React from 'react'
-import { Link, graphql } from 'gatsby'
-import styled, { keyframes, css } from 'styled-components'
+import { Link } from 'gatsby'
+import styled from 'styled-components'
 import Img from 'gatsby-image'
-import  { UpDownWide, UpDown, LeftRight, Orbit } from '../styles/animations'
 import tw from 'tailwind.macro'
 
 const Container = styled.div`
@@ -10,7 +9,7 @@ const Container = styled.div`
 `
 
 const Image = styled(Img)`
-  ${ tw`w-full shadow-md hover:shadow-lg` };
+  ${ tw`w-full rounded shadow-md overflow-hidden` };
 `
 
 const Box = styled.div`
