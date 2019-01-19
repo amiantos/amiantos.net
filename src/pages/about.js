@@ -1,23 +1,6 @@
 import React from 'react'
-import styled from 'styled-components'
-import tw from 'tailwind.macro'
 import SEO from '../components/seo'
-
-const PostContainer = styled.div`
-  ${ tw`relative w-full p-4` }
-`
-
-const Post = styled.div`
-  ${ tw`bg-white rounded shadow-lg overflow-hidden` }
-`
-
-const Title = styled.div`
-  ${ tw`font-sans bg-blue-darkest text-xl text-grey-lightest p-6` };
-`
-
-const Content = styled.div`
-  ${ tw`font-serif text-black leading-normal p-6` };
-`
+import { PostContainer, Post, Title, Content } from '../styles/post'
 
 const AboutPage = props => {
   return (

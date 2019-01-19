@@ -24,6 +24,7 @@ const randomIcon = () => {
   default:
     break
   }
+
   let fill = '#eee'
   switch (getRandomInt(1, 2)) {
   case 1:
