@@ -1,17 +1,14 @@
 import styled, { keyframes, css } from 'styled-components'
 
 const rotate = keyframes`
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  100% {
+    transform: rotate(160deg);
   }
 `
 
 const upDown = keyframes`
   from {
-    transform: translateY(0);
+    transform: translateY(0px);
   }
   to {
     transform: translateY(30px);
@@ -20,7 +17,7 @@ const upDown = keyframes`
 
 const upDownWide = keyframes`
   from {
-    transform: translateY(0);
+    transform: translateY(0px);
   }
   to {
     transform: translateY(200px);
@@ -46,7 +43,7 @@ const orbit = keyframes`
 `
 
 const rotateSlowAnimation = css`
-  ${ rotate } 30s ease-in-out infinite;
+  ${ rotate } 20s linear infinite;
 `
 
 const upDownAnimation = css`
@@ -83,12 +80,4 @@ export const UpDownWide = styled.div`
 
 export const LeftRight = styled.div`
   animation: ${ leftRightAnimation };
-`
-
-export const waveAnimation = length => css`
-  animation: ${ wave } ${ length } linear infinite alternate;
-`
-
-export const rotateAnimation = length => css`
-  animation: ${ rotate } ${ length } linear infinite;
 `
