@@ -6,7 +6,7 @@ import triangleSVG from '../images/triangle.svg'
 import squareSVG from '../images/square.svg'
 import circleSVG from '../images/circle.svg'
 import pentagramSVG from '../images/pentagram.svg'
-import { UpDown, RotateSlow, LeftRight, UpDownWide, RightLeft } from '../styles/animations';
+import { RotateSlow } from '../styles/animations'
 
 const Wrapper = styled.div`
   ${ tw`absolute inline-block z-0` }
