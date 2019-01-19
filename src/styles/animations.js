@@ -16,12 +16,12 @@ const upDown = keyframes`
   }
 `
 
-const upDownWide = keyframes`
+const downUp = keyframes`
   from {
     transform: translateY(0px);
   }
   to {
-    transform: translateY(200px);
+    transform: translateY(-30px);
   }
 `
 
@@ -36,10 +36,10 @@ const leftRight = keyframes`
 
 const rightLeft = keyframes`
   from {
-    transform: translateX(-30px);
+    transform: translateX(0px);
   }
   to {
-    transform: translateX(0px);
+    transform: translateX(-30px);
   }
 `
 
@@ -53,23 +53,23 @@ const orbit = keyframes`
 `
 
 const rotateSlowAnimation = css`
-  ${ rotate } 20s linear infinite;
+  ${ rotate } 30s linear infinite;
 `
 
 const upDownAnimation = css`
-  ${ upDown } 10s ease-in-out infinite alternate;
+  ${ upDown } 12s ease-in-out infinite alternate;
 `
 
-const upDownWideAnimation = css`
-  ${ upDownWide } 18s ease-in-out infinite alternate;
+const downUpAnimation = css`
+  ${ upDown } 12s ease-in-out infinite alternate;
 `
 
 const leftRightAnimation = css`
-  ${ leftRight } 8s ease-in-out infinite alternate;
+  ${ leftRight } 12s ease-in-out infinite alternate;
 `
 
 const rightLeftAnimation = css`
-  ${ rightLeft } 8s ease-in-out infinite alternate;
+  ${ rightLeft } 12s ease-in-out infinite alternate;
 `
 
 const orbitAnimation = css`
@@ -88,8 +88,8 @@ export const UpDown = styled.div`
   animation: ${ upDownAnimation };
 `
 
-export const UpDownWide = styled.div`
-  animation: ${ upDownWideAnimation };
+export const DownUp = styled.div`
+  animation: ${ downUpAnimation };
 `
 
 export const LeftRight = styled.div`

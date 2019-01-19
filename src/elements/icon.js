@@ -29,19 +29,20 @@ const icons = {
   }
 }
 
-const getRandomInt = (min, max) => {
-  return Math.floor(Math.random() * (max - min + 1)) + min
-}
+const Div = styled.div`
+`
 
-const Icon = ({ icon, size, top, left, fill }) => {
-  const animations = [UpDown, LeftRight, RightLeft, RotateSlow]
-  const AnimationType = animations[Math.floor(Math.random()*animations.length)];
+const Icon = ({ icon, size, top, left, fill, animation, rotate }) => {
+  const AnimationType = animation
+  const Rotation = rotate ? RotateSlow : Div
   return (
     <Wrapper top={top} left={left}>
       <AnimationType>
-        <svg style={{ width: `${ size }`, height: `${ size }` }} fill={fill}>
-          <use xlinkHref={ icons[icon].resource } />
-        </svg>
+        <Rotation>
+          <svg style={{ width: `${ size }`, height: `${ size }` }} fill={fill}>
+            <use xlinkHref={ icons[icon].resource } />
+          </svg>
+        </Rotation>
       </AnimationType>
     </Wrapper>
   )
