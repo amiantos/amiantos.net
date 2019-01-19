@@ -11,7 +11,7 @@ const NotFoundContainer = styled(PostContainer)`
 const NotFoundPage = props => {
   return (
     <>
-      <SEO title="about" keywords={[`brad root`, `brad`, `root`, `about`]} />
+      <SEO title="404 Not Found" keywords={[`404`, `error`]} />
       <NotFoundContainer>
         <Post>
           <Title>404 Not Found</Title>
