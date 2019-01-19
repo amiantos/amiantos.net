@@ -1,5 +1,4 @@
 import styled, { keyframes, css } from 'styled-components'
-import tw from 'tailwind.macro'
 
 const rotate = keyframes`
   100% {

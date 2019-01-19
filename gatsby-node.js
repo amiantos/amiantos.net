@@ -1,7 +1,6 @@
 const path = require('path')
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
-// Create slug for blog posts
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
 
@@ -15,7 +14,6 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
   }
 }
 
-// Create blog post pages
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
 
@@ -42,8 +40,4 @@ exports.createPages = ({ graphql, actions }) => {
       })
     })
   })
-}
-
-if (process.env.NODE_ENV === 'development') {
-  process.env.GATSBY_WEBPACK_PUBLICPATH = '/'
 }

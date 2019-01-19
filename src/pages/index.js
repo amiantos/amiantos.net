@@ -5,7 +5,6 @@ import tw from 'tailwind.macro'
 
 import SEO from '../components/seo'
 import Excerpt from '../components/excerpt'
-import PhotoBar from '../components/photobar'
 
 const ExcerptContainer = styled.div`
   ${ tw`md:flex md:flex-wrap md:items-stretch z-40` }
