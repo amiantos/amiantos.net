@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import tw from 'tailwind.macro'
 
 const Footer = styled.footer`
-  ${ tw`p-8 font-sans text-xs text-center` }
+  ${ tw`p-16 font-sans text-xs text-center` }
 `
 
 export default () => (
