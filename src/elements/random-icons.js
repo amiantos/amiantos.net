@@ -1,7 +1,11 @@
 import React from 'react'
 import Icon from '../elements/icon'
 import {
-  UpDown, RightLeft, LeftRight, DownUp, Orbit
+  UpDown,
+  RightLeft,
+  LeftRight,
+  DownUp,
+  Orbit
 } from '../styles/animations'
 
 const getRandomInt = (min, max) => {
