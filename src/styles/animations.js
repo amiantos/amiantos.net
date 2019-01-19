@@ -1,8 +1,9 @@
 import styled, { keyframes, css } from 'styled-components'
+import tw from 'tailwind.macro'
 
 const rotate = keyframes`
   100% {
-    transform: rotate(160deg);
+    transform: rotate(360deg);
   }
 `
 
@@ -33,6 +34,15 @@ const leftRight = keyframes`
   }
 `
 
+const rightLeft = keyframes`
+  from {
+    transform: translateX(-30px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+`
+
 const orbit = keyframes`
   from {
     transform: rotate(0deg) translateX(1px);
@@ -58,6 +68,10 @@ const leftRightAnimation = css`
   ${ leftRight } 8s ease-in-out infinite alternate;
 `
 
+const rightLeftAnimation = css`
+  ${ rightLeft } 8s ease-in-out infinite alternate;
+`
+
 const orbitAnimation = css`
   ${ orbit } 10s linear infinite;
 `
@@ -80,4 +94,8 @@ export const UpDownWide = styled.div`
 
 export const LeftRight = styled.div`
   animation: ${ leftRightAnimation };
+`
+
+export const RightLeft = styled.div`
+  animation: ${ rightLeftAnimation };
 `

@@ -6,9 +6,10 @@ import triangleSVG from '../images/triangle.svg'
 import squareSVG from '../images/square.svg'
 import circleSVG from '../images/circle.svg'
 import pentagramSVG from '../images/pentagram.svg'
+import { UpDown, RotateSlow, LeftRight, UpDownWide, RightLeft } from '../styles/animations';
 
 const Wrapper = styled.div`
-  ${ tw`relative z-0` }
+  ${ tw`absolute inline-block z-0` }
   left: ${ props => props.left };
   top: ${ props => props.top };
 `
@@ -28,12 +29,22 @@ const icons = {
   }
 }
 
-const Icon = ({ icon, size, top, left, fill }) => (
-  <Wrapper top={top} left={left}>
-    <svg style={{ width: `${ size }`, height: `${ size }` }} fill={fill}>
-      <use xlinkHref={ icons[icon].resource } />
-    </svg>
-  </Wrapper>
-)
+const getRandomInt = (min, max) => {
+  return Math.floor(Math.random() * (max - min + 1)) + min
+}
+
+const Icon = ({ icon, size, top, left, fill }) => {
+  const animations = [UpDown, LeftRight, RightLeft, RotateSlow]
+  const AnimationType = animations[Math.floor(Math.random()*animations.length)];
+  return (
+    <Wrapper top={top} left={left}>
+      <AnimationType>
+        <svg style={{ width: `${ size }`, height: `${ size }` }} fill={fill}>
+          <use xlinkHref={ icons[icon].resource } />
+        </svg>
+      </AnimationType>
+    </Wrapper>
+  )
+}
 
 export default Icon
