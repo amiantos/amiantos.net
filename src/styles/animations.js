@@ -45,10 +45,10 @@ const rightLeft = keyframes`
 
 const orbit = keyframes`
   from {
-    transform: rotate(0deg) translateX(1px);
+    transform: rotate(0deg) translateX(60px) rotate(0deg);
   }
   to {
-    transform: rotate(360deg) translateX(1px);
+    transform: rotate(360deg) translateX(60px) rotate(-360deg);
   }
 `
 
@@ -61,7 +61,7 @@ const upDownAnimation = css`
 `
 
 const downUpAnimation = css`
-  ${ upDown } 12s ease-in-out infinite alternate;
+  ${ downUp } 12s ease-in-out infinite alternate;
 `
 
 const leftRightAnimation = css`
@@ -73,7 +73,7 @@ const rightLeftAnimation = css`
 `
 
 const orbitAnimation = css`
-  ${ orbit } 10s linear infinite;
+  ${ orbit } 60s linear infinite;
 `
 
 export const RotateSlow = styled.div`

@@ -8,7 +8,7 @@ import Header from '../components/header'
 import Footer from '../components/footer'
 import Menu from '../components/menu'
 import Icon from '../elements/icon'
-import { UpDown, RightLeft, LeftRight, DownUp } from '../styles/animations';
+import { UpDown, RightLeft, LeftRight, DownUp, Orbit } from '../styles/animations';
 
 const Container = styled.div`
   ${ tw`relative max-w-lg mx-auto z-40` }
@@ -72,11 +72,12 @@ const randomIcon = () => {
   default:
     break
   }
-  const animations = [UpDown, LeftRight, RightLeft, DownUp]
+  
+  const animations = [UpDown, LeftRight, RightLeft, DownUp, Orbit]
   const AnimationType = animations[Math.floor(Math.random()*animations.length)];
 
   return (
-    <Icon icon={shape} size='3rem' top={ getRandomInt(0, 100) + '%' } left={ getRandomInt(0, 100) + '%' } fill={fill} animation={AnimationType} rotate={ getRandomInt(0, 1) } />
+    <Icon icon={shape} size={ getRandomInt(1, 4) + `rem` } top={ getRandomInt(0, 100) + '%' } left={ getRandomInt(0, 100) + '%' } fill={fill} animation={AnimationType} rotate={ getRandomInt(0, 1) } />
   )
 }
 
