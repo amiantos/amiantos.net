@@ -12,7 +12,8 @@ const MenuItem = styled.li`
 `
 
 const MenuLink = styled(Link)`
-  ${ tw`font-sans no-underline` }
+  ${ tw`font-sans no-underline pb-1 hover:border-solid border-blue-dark border-0 border-b-2` }
+
 `
 
 export default () => {

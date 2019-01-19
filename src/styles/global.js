@@ -21,7 +21,7 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
   }
   a {
-    color: darkred;
+    color: #12283a;
   }
 `
 

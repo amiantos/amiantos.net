@@ -6,6 +6,14 @@ module.exports = {
     homeCity: `Los Angeles`,
   },
   plugins: [
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Vollkorn: 400,700']
+        }
+      }
+    },
     `gatsby-plugin-layout`,
     `gatsby-plugin-svg-sprite`,
     `gatsby-plugin-styled-components`,

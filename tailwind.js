@@ -229,6 +229,19 @@ module.exports = {
       'Courier New',
       'monospace',
     ],
+    'title': [
+      'Vollkorn',
+      'Georgia',
+      'Constantia',
+      'Lucida Bright',
+      'Lucidabright',
+      'Lucida Serif',
+      'Lucida',
+      'DejaVu Serif',
+      'Bitstream Vera Serif',
+      'Liberation Serif',
+      'serif',
+    ],
   },
 
 
