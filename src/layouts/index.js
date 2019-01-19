@@ -7,6 +7,7 @@ import tw from 'tailwind.macro'
 import Header from '../components/header'
 import Footer from '../components/footer'
 import Menu from '../components/menu'
+import Icon from '../elements/icon'
 
 const Container = styled.div`
   ${ tw`relative max-w-lg mx-auto z-40` }

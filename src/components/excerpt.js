@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import tw from 'tailwind.macro'
 
 const ExcerptContainer = styled.div`
-  ${ tw`md:w-1/2 md:flex-grow p-4` }
+  ${ tw`relative md:w-1/2 md:flex-grow p-4` }
 `
 
 const Excerpt = styled.div`

@@ -8,7 +8,7 @@ import circleSVG from '../images/circle.svg'
 import pentagramSVG from '../images/pentagram.svg'
 
 const Wrapper = styled.div`
-  ${ tw`absolute` }
+  ${ tw`absolute z-0` }
   left: ${ props => props.left };
   top: ${ props => props.top };
 `

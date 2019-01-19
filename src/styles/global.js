@@ -1,5 +1,4 @@
 import { createGlobalStyle } from 'styled-components'
-import { withPrefix } from 'gatsby'
 
 const GlobalStyle = createGlobalStyle`
   *, *:before, *:after {
@@ -20,11 +19,9 @@ const GlobalStyle = createGlobalStyle`
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color: #bbb;
-    background-image: url(${ withPrefix('/paper2.jpg') });
   }
   a {
-    color: white;
+    color: darkred;
   }
 `
 
