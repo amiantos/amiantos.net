@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
 import tw from 'tailwind.macro'
+import Img from 'gatsby-image'
 
 const ExcerptContainer = styled.div`
   ${ tw`relative md:w-1/2 md:flex-grow p-4` }
@@ -28,13 +29,21 @@ const Content = styled.div`
   ${ tw`font-serif text-black leading-normal p-6` };
 `
 
+const Image = styled(Img)`
+  ${ tw`` }
+`
+
 export default ({ data, i }) => (
   <ExcerptContainer>
     <Excerpt>
       <ExcerptLink to={data.fields.slug}>
         <Title>{data.frontmatter.title}</Title>
         <Content>
-          {!data.excerpt ? '[photo]' : data.excerpt}
+          {data.frontmatter.image && (
+            <Image fluid={data.frontmatter.image.childImageSharp.fluid} />
+          )}
+          {data.frontmatter.image && data.excerpt && ( <br/> )}
+          {data.excerpt}
         </Content>
         <Date>{data.frontmatter.date}</Date>
       </ExcerptLink>
