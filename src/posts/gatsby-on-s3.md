@@ -1,6 +1,6 @@
 ---
 title: Gatsby on AWS S3 and CloudFront
-date: '2018-01-13'
+date: '2019-01-13'
 type: 'text'
 tags: ['programming', 'gatsby', 'aws', 'serverless']
 ---
