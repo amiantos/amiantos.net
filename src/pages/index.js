@@ -34,14 +34,14 @@ export const query = graphql`{
         fields {
           slug
         }
-        excerpt(pruneLength: 250)
+        excerpt(pruneLength: 570)
         frontmatter {
           date(formatString: "MMM Do YYYY")
           title
           image {
             publicURL
             childImageSharp{
-              fluid(maxHeight: 500) {
+              fluid(maxWidth: 800) {
                 ...GatsbyImageSharpFluid
               }
             }

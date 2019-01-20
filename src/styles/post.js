@@ -8,7 +8,7 @@ export const PostContainer = styled.div`
 `
 
 export const Post = styled.div`
-  ${ tw`bg-white rounded shadow-lg overflow-hidden` }
+  ${ tw`flex flex-col bg-white rounded shadow-lg overflow-hidden md:h-full` }
 `
 
 export const Title = styled.div`
@@ -21,7 +21,7 @@ export const DateLink = styled(Link)`
 `
 
 export const Content = styled.div`
-  ${ tw`font-serif text-black leading-normal p-6 pb-0` };
+  ${ tw`flex-grow font-serif text-black leading-normal p-6 pb-0 overflow-hidden` };
 `
 
 export const Image = styled(Img)`
@@ -29,7 +29,7 @@ export const Image = styled(Img)`
 `
 
 export const ExcerptContainer = styled.div`
-  ${ tw`relative md:w-1/2 md:flex-grow p-4` }
+  ${ tw`relative md:w-1/2 md:flex-grow md:self-stretch p-4` }
 `
 
 export const ExcerptLink = styled(Link)`

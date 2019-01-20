@@ -14,12 +14,12 @@ const AboutPage = props => {
             <p>Things I Like:</p>
             <ul>
               <li>Music</li>
+              <li>Food</li>
               <li>Programming</li>
-              <li>Cycling (Uni and Bi)</li>
               <li>Television & Movies</li>
-              <li>Art</li>
+              <li>Cycling (Uni and Bi)</li>
             </ul>
-            <p>This site is built using GatsbyJS.</p>
+            <p>I may or may not write about those things here.</p>
             <p>
               You can view the source code for this site on <a href="https://www.github.com/amiantos/amiantos.net">GitHub</a>.
             </p>
