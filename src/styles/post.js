@@ -21,11 +21,11 @@ export const DateLink = styled(Link)`
 `
 
 export const Content = styled.div`
-  ${ tw`font-serif text-black leading-normal p-6` };
+  ${ tw`font-serif text-black leading-normal p-6 pb-0` };
 `
 
 export const Image = styled(Img)`
-  ${ tw`` }
+  ${ tw`mb-6` }
 `
 
 export const ExcerptContainer = styled.div`

@@ -16,8 +16,7 @@ export default ({ data, i }) => {
         <Title>{data.frontmatter.title}</Title>
         <Content>
           {data.frontmatter.image && (<Image fluid={data.frontmatter.image.childImageSharp.fluid} />)}
-          {data.frontmatter.image && data.excerpt && (<br />)}
-          {data.excerpt}
+          <p>{data.excerpt}</p>
         </Content>
         <DateLink to={data.fields.slug}>
           {data.frontmatter.date}

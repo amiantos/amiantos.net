@@ -17,7 +17,9 @@ export default ({ data }) => {
         <Title>{post.frontmatter.title}</Title>
         <Content>
           {post.frontmatter.image && (
-            <Image fluid={post.frontmatter.image.childImageSharp.fluid} />
+            <a href={post.frontmatter.image.publicURL}>
+              <Image fluid={post.frontmatter.image.childImageSharp.fluid} />
+            </a>
           )}
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </Content>
