@@ -13,7 +13,9 @@ export default ({ data, i }) => {
   return (
     <ExcerptContainer>
       <Post>
-        <Title>{data.frontmatter.title}</Title>
+        <ExcerptLink to={data.fields.slug}>
+          <Title>{data.frontmatter.title}</Title>
+        </ExcerptLink>
         <Content>
           <ExcerptLink to={data.fields.slug}>
             {data.frontmatter.image && (<Image fluid={data.frontmatter.image.childImageSharp.fluid} />)}
