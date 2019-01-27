@@ -7,7 +7,8 @@ import tw from 'tailwind.macro'
 import Header from '../components/header'
 import Footer from '../components/footer'
 import Menu from '../components/menu'
-import { randomIcons } from '../elements/random-icons';
+import { randomIcons } from '../elements/random-icons'
+import '../styles/prismjs-monokai.css'
 
 const Container = styled.div`
   ${ tw`relative max-w-lg mx-auto z-40` }
