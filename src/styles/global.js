@@ -21,7 +21,7 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
   }
   a {
-    color: #12283a;
+    color: #272822;
   }
   p {
     margin-top:0;

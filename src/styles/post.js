@@ -12,16 +12,16 @@ export const Post = styled.div`
 `
 
 export const Title = styled.div`
-  ${ tw`font-sans bg-blue-darkest text-xl text-grey-lightest p-6` };
+  ${ tw`font-sans bg-black-monokai text-xl text-grey-lightest p-6` };
 `
 
 export const DateLink = styled(Link)`
-  ${ tw`block font-sans no-underline bg-grey-lightest text-xs text-right text-grey-dark p-4` };
+  ${ tw`block font-sans no-underline bg-grey-lightest text-xs text-right text-grey-darkest p-4` };
   border-top: 1px solid #eee;
 `
 
 export const Content = styled.div`
-  ${ tw`flex-grow font-serif text-black leading-normal p-6 pb-0 overflow-hidden` };
+  ${ tw`flex-grow font-serif text-black leading-loose-ish p-6 pb-1 overflow-hidden` };
 `
 
 export const Image = styled(Img)`

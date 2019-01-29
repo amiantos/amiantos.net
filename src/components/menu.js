@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import tw from 'tailwind.macro'
 
 const Menu = styled.ul`
-  ${ tw`flex items-center justify-center list-reset mx-auto pb-5` }
+  ${ tw`flex items-center justify-center list-reset mx-auto pb-4` }
 `
 
 const MenuItem = styled.li`
@@ -18,17 +18,16 @@ const MenuLink = styled(Link)`
 
 export default () => {
   return (
-    <Menu>
-      <MenuItem>
-        <MenuLink to='/'>Home</MenuLink>
-      </MenuItem>
-      <MenuItem>
-        <MenuLink to='/about'>About</MenuLink>
-      </MenuItem>
-      <MenuItem>
-        <MenuLink to='/blog'>Archive</MenuLink>
-      </MenuItem>
-    </Menu>
+    <nav>
+      <Menu>
+        <MenuItem>
+          <MenuLink to='/'>Home</MenuLink>
+        </MenuItem>
+        <MenuItem>
+          <MenuLink to='/about'>About</MenuLink>
+        </MenuItem>
+      </Menu>
+    </nav>
   )
 }
 

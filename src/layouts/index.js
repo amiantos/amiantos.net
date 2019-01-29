@@ -10,7 +10,7 @@ import Menu from '../components/menu'
 import { randomIcons } from '../elements/random-icons'
 import '../styles/prismjs-monokai.css'
 
-const Container = styled.div`
+const Container = styled.main`
   ${ tw`relative max-w-lg mx-auto z-40` }
 `
 
