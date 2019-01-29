@@ -82,6 +82,6 @@ module.exports = {
         trackingId: 'UA-256503-23'
       },
     },
-    'gatsby-plugin-offline',
+    `gatsby-plugin-remove-serviceworker`,
   ],
 }
