@@ -1,7 +1,7 @@
 ---
 title: Gatsby on AWS S3 and CloudFront
 date: '2019-01-13'
-tags: ['programming', 'gatsby', 'aws', 'serverless']
+tags: ['programming', 'gatsby', 'aws']
 ---
 
 This is a quick hit and run post on how I got my Gatsby site up and running on S3 and CloudFront with minimal fuss. The main perk to running a site this way is that it is very nearly free. Unless my blog gets a lot traffic, I assume I'll be paying at most <strong>$6.00 a year</strong> to host my blog. That's cheaper than I've ever hosted a site for, and the entirety of that charge is just paying for Route 53 to support DNS for my domain.

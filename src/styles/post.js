@@ -15,9 +15,17 @@ export const Title = styled.div`
   ${ tw`font-sans bg-black-monokai text-xl text-grey-lightest p-6` };
 `
 
+export const Footer = styled.div`
+${ tw`block flex bg-grey-lightest text-xs text-grey-darkest p-4` };
+border-top: 1px solid #eee;
+`
+
 export const DateLink = styled(Link)`
-  ${ tw`block font-sans no-underline bg-grey-lightest text-xs text-right text-grey-darkest p-4` };
-  border-top: 1px solid #eee;
+  ${ tw`flex-1 text-right font-sans no-underline text-xs text-grey-darkest` };
+`
+
+export const TagLink = styled(Link)`
+  ${ tw`font-sans no-underline text-xs text-grey-darkest` }
 `
 
 export const Content = styled.div`

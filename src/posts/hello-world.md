@@ -1,7 +1,7 @@
 ---
 title: Hello World!
 date: '2019-01-11'
-tags: ['introduction']
+tags: ['personal']
 ---
 
 Hi! Welcome to my new blog. I don't really know what I am going to put here, because I haven't blogged in so long that I feel mostly like I have nothing worth saying.

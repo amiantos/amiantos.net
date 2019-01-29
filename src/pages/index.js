@@ -14,12 +14,12 @@ const IndexPage = props => {
   const postList = props.data.posts
   return (
     <>
-        <SEO title="home" keywords={[`gatsby`, `application`, `react`]} />
-        <ExcerptContainer>
-          {postList.edges.map(({ node }, i) => (
-            <Excerpt data={node} i={i} key={i} />
-          ))}
-        </ExcerptContainer>
+      <SEO title="home" keywords={[`gatsby`, `application`, `react`]} />
+      <ExcerptContainer>
+        {postList.edges.map(({ node }, i) => (
+          <Excerpt data={node} i={i} key={i} />
+        ))}
+      </ExcerptContainer>
     </>
   )
 }
@@ -36,6 +36,7 @@ export const query = graphql`{
         }
         excerpt(pruneLength: 570)
         frontmatter {
+          tags
           date(formatString: "MMM Do YYYY")
           title
           image {
