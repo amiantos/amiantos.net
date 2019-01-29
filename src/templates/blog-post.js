@@ -45,7 +45,6 @@ export const query = graphql`
       frontmatter {
         title
         tags
-        type
         date(formatString: "MMM Do YYYY")
         image {
           publicURL
