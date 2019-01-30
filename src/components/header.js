@@ -9,7 +9,7 @@ const Title = styled.header`
 `
 
 const StyledLink = styled(Link)`
-  ${ tw`flex-none mx-auto no-underline` }
+  ${ tw`relative flex-none mx-auto no-underline` }
 `
 
 const Text = styled.div`

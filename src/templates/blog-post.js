@@ -15,7 +15,6 @@ import kebabCase from 'lodash/kebabCase'
 
 export default ({ data }) => {
   const post = data.markdownRemark
-  const tagQuantity = post.frontmatter.tags.length
   return (
     <>
       <SEO title={post.frontmatter.title} keywords={post.frontmatter.tags} />
@@ -31,20 +30,23 @@ export default ({ data }) => {
             <div dangerouslySetInnerHTML={{ __html: post.html }} />
           </Content>
           <Footer>
-          { post.frontmatter.tags.map((tag, index) => (
-            <span key={tag}>
-              <TagLink to={`/tags/${ kebabCase(tag) }/`}>
-                {tag}
-              </TagLink>
-              { index < (tagQuantity - 1) && (
-                <>,&nbsp;</>
-              )}
-            </span>
-          )) }
-          <DateLink to={post.fields.slug}>
-            {post.frontmatter.date}
-          </DateLink>
-        </Footer>
+            { post.frontmatter.tags.map((tag, index) => {
+              const tagQuantity = post.frontmatter.tags.length
+              return (
+                <span key={tag}>
+                  <TagLink to={`/tags/${ kebabCase(tag) }/`}>
+                    {tag}
+                  </TagLink>
+                  { index < (tagQuantity - 1) && (
+                    <>,&nbsp;</>
+                  )}
+                </span>
+              )
+            })}
+            <DateLink to={post.fields.slug}>
+              {post.frontmatter.date}
+            </DateLink>
+          </Footer>
         </Post>
       </PostContainer>
     </>

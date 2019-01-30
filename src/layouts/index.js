@@ -39,8 +39,8 @@ const Layout = ({ children }) => {
             { renderedIcons }
           </IconContainer>
           <Header siteTitle={data.site.siteMetadata.title} />
+          <Menu />
           <Container>
-            <Menu />
             <div>
               {children}
             </div>
