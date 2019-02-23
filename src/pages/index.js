@@ -7,7 +7,7 @@ import SEO from '../components/seo'
 import Excerpt from '../components/excerpt'
 
 const ExcerptContainer = styled.div`
-  ${ tw`md:flex md:flex-wrap md:items-stretch z-40` }
+  ${ tw`z-40` }
 `
 
 const IndexPage = props => {
@@ -34,7 +34,7 @@ export const query = graphql`{
         fields {
           slug
         }
-        excerpt(pruneLength: 570)
+        excerpt(pruneLength: 600)
         frontmatter {
           tags
           date(formatString: "MMM Do YYYY")
