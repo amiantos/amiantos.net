@@ -8,28 +8,27 @@ export const PostContainer = styled.div`
 `
 
 export const Post = styled.div`
-  ${ tw`flex flex-col bg-white rounded shadow-lg overflow-hidden md:h-full` }
+  ${ tw`flex flex-col bg-white rounded shadow-lg overflow-hidden` }
 `
 
 export const Title = styled.div`
-  ${ tw`font-sans bg-black-monokai text-xl text-grey-lightest p-6` };
+  ${ tw`font-sans bg-white text-2xl text-black-monokai p-6 border-solid border-black-monokai border-0 border-b-1` };
 `
 
 export const Footer = styled.div`
-${ tw`block flex bg-grey-lightest text-xs text-grey-darkest p-4` };
-border-top: 1px solid #eee;
+${ tw`block flex bg-grey-lightest text-xs text-grey-darkest p-4 border-solid border-blue-lightest border-0 border-t-1` };
 `
 
 export const DateLink = styled(Link)`
-  ${ tw`flex-1 text-right font-sans no-underline text-xs text-grey-darkest` };
+  ${ tw`flex-1 text-right font-sans no-underline text-xs text-grey-darkest hover:text-blue-dark` };
 `
 
 export const TagLink = styled(Link)`
-  ${ tw`font-sans no-underline text-xs text-grey-darkest` }
+  ${ tw`font-sans no-underline text-xs text-grey-darkest hover:text-blue-dark` }
 `
 
 export const Content = styled.div`
-  ${ tw`flex-grow font-serif text-black leading-loose-ish p-6 pb-1 overflow-hidden` };
+  ${ tw`flex-grow font-sans text-black text-lg leading-loose p-8 pb-1 overflow-hidden` };
 `
 
 export const Image = styled(Img)`
@@ -37,7 +36,7 @@ export const Image = styled(Img)`
 `
 
 export const ExcerptContainer = styled.div`
-  ${ tw`relative md:w-1/2 md:flex-grow md:self-stretch p-4` }
+  ${ tw`relative p-4` }
 `
 
 export const ExcerptLink = styled(Link)`

@@ -10,7 +10,7 @@ const TagHeader = styled.div`
   ${ tw`font-sans text-center bg-black-monokai rounded shadow-lg text-xl text-grey-lightest p-6 m-4` }
 `
 const ExcerptContainer = styled.div`
-  ${ tw`md:flex md:flex-wrap md:items-stretch z-40` }
+  ${ tw`z-40` }
 `
 
 const Tags = ({ pageContext, data }) => {

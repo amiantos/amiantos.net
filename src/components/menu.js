@@ -26,6 +26,9 @@ export default () => {
           <MenuLink to='/about'>About</MenuLink>
         </MenuItem>
         <MenuItem>
+          <MenuLink to='/tags/programming'>Programming</MenuLink>
+        </MenuItem>
+        <MenuItem>
           <MenuLink to='/tags/photo'>Photos</MenuLink>
         </MenuItem>
       </Menu>
