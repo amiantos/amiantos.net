@@ -1,6 +1,7 @@
 ---
 title: Automating Python Lambda Deployments with Docker
 date: '2019-02-23'
+description: 'A quick guide on how to automate Lambda deployment package creation using Docker.'
 tags: ['programming', 'docker', 'lambda', 'aws', 'python']
 ---
 

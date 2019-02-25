@@ -17,7 +17,7 @@ export default ({ data }) => {
   const post = data.markdownRemark
   return (
     <>
-      <SEO title={post.frontmatter.title} keywords={post.frontmatter.tags} />
+      <SEO title={post.frontmatter.title} keywords={post.frontmatter.tags} description={post.frontmatter.description || post.excerpt}/>
       <PostContainer>
         <Post>
           <Title>{post.frontmatter.title}</Title>
@@ -60,10 +60,12 @@ export const query = graphql`
         slug
       }
       html
+      excerpt(pruneLength: 160)
       frontmatter {
         title
         tags
         date(formatString: "MMM Do YYYY")
+        description
         image {
           publicURL
           childImageSharp{
