@@ -37,7 +37,7 @@ export const query = graphql`{
         excerpt(pruneLength: 600)
         frontmatter {
           tags
-          date(formatString: "MMM Do YYYY")
+          date(formatString: "YYYY-MM-DD")
           title
           image {
             publicURL
