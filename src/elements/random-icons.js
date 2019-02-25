@@ -16,7 +16,7 @@ function randomIndex (animations) {
   return Math.floor(Math.random() * animations.length)
 }
 
-const randomIcon = () => {
+const randomIcon = index => {
   let shape = 'triangle'
   switch (getRandomInt(1, 3)) {
   case 1:
@@ -55,7 +55,8 @@ const randomIcon = () => {
       left={ getRandomInt(0, 100) + '%' }
       fill={fill}
       animation={AnimationType}
-      rotate={ getRandomInt(0, 1) } 
+      rotate={ getRandomInt(0, 1) }
+      key={index} 
     />
   )
 }
@@ -63,7 +64,7 @@ const randomIcon = () => {
 export const randomIcons = () => {
   let rows = []
   for (let i = 0; i < 30; i++) {
-    rows.push(randomIcon())
+    rows.push(randomIcon(i))
   }
   return rows
 }

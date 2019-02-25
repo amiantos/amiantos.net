@@ -1,6 +1,7 @@
 ---
 title: Gatsby on AWS S3 and CloudFront
 date: '2019-01-13'
+description: 'Hosting a Gatsby generated site on AWS is fast, cheap, and easy!'
 tags: ['programming', 'gatsby', 'aws']
 ---
 

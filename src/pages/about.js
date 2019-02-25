@@ -8,7 +8,7 @@ const AboutPage = props => {
       <SEO title="about" keywords={[`brad root`, `brad`, `root`, `about`]} />
       <PostContainer>
         <Post>
-          <Title>About</Title>
+          <Title>What's this?</Title>
           <Content>
             <p>Hi! I'm Brad. I'm a software engineer living in Los Angeles.</p>
             <p>I currently work for <a href="https://www.thenounproject.com">The Noun Project</a> on <a href="https://www.lingoapp.com">Lingo</a>.</p>

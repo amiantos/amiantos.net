@@ -7,7 +7,7 @@ import {
   Content,
   Image,
   DateLink,
-  Footer,
+  Meta,
   TagLink
 } from '../styles/post'
 import SEO from '../components/seo'
@@ -17,10 +17,22 @@ export default ({ data }) => {
   const post = data.markdownRemark
   return (
     <>
-      <SEO title={post.frontmatter.title} keywords={post.frontmatter.tags} />
+      <SEO title={post.frontmatter.title} keywords={post.frontmatter.tags} description={post.frontmatter.description || post.excerpt}/>
       <PostContainer>
         <Post>
           <Title>{post.frontmatter.title}</Title>
+          <Meta>
+            <TagLink to={post.fields.slug}>
+              {post.frontmatter.date}
+            </TagLink>
+            { post.frontmatter.tags.map((tag, index) => {
+              return (
+                <TagLink key={index} to={`/tags/${ kebabCase(tag) }/`}>
+                  {tag}
+                </TagLink>
+              )
+            })}
+          </Meta>
           <Content>
             {post.frontmatter.image && (
               <a href={post.frontmatter.image.publicURL}>
@@ -29,24 +41,6 @@ export default ({ data }) => {
             )}
             <div dangerouslySetInnerHTML={{ __html: post.html }} />
           </Content>
-          <Footer>
-            { post.frontmatter.tags.map((tag, index) => {
-              const tagQuantity = post.frontmatter.tags.length
-              return (
-                <span key={tag}>
-                  <TagLink to={`/tags/${ kebabCase(tag) }/`}>
-                    {tag}
-                  </TagLink>
-                  { index < (tagQuantity - 1) && (
-                    <>,&nbsp;</>
-                  )}
-                </span>
-              )
-            })}
-            <DateLink to={post.fields.slug}>
-              {post.frontmatter.date}
-            </DateLink>
-          </Footer>
         </Post>
       </PostContainer>
     </>
@@ -60,10 +54,12 @@ export const query = graphql`
         slug
       }
       html
+      excerpt(pruneLength: 160)
       frontmatter {
         title
         tags
-        date(formatString: "MMM Do YYYY")
+        date(formatString: "YYYY-MM-DD")
+        description
         image {
           publicURL
           childImageSharp{

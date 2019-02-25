@@ -4,31 +4,27 @@ import tw from 'tailwind.macro'
 import Img from 'gatsby-image'
 
 export const PostContainer = styled.div`
-  ${ tw`relative w-full p-4` }
+  ${ tw`relative w-full p-2 sm:p-4` }
 `
 
 export const Post = styled.div`
-  ${ tw`flex flex-col bg-white rounded shadow-lg overflow-hidden` }
+  ${ tw`bg-white rounded-lg shadow-lg overflow-hidden` }
 `
 
 export const Title = styled.div`
-  ${ tw`font-sans bg-white text-2xl text-black-monokai p-6 border-solid border-black-monokai border-0 border-b-1` };
+  ${ tw`font-sans bg-white text-lg font-bold text-black-monokai pb-3 pt-5 pl-5 pr-5 sm:text-xl md:text-2xl md:pt-8 md:pl-8 md:pr-8 md:pb-4` };
 `
 
-export const Footer = styled.div`
-${ tw`block flex bg-grey-lightest text-xs text-grey-darkest p-4 border-solid border-blue-lightest border-0 border-t-1` };
-`
-
-export const DateLink = styled(Link)`
-  ${ tw`flex-1 text-right font-sans no-underline text-xs text-grey-darkest hover:text-blue-dark` };
+export const Meta = styled.div`
+${ tw`text-xs text-grey-darkest pb-0 pt-2 ml-5 mr-5 md:ml-8 md:mr-8` };
 `
 
 export const TagLink = styled(Link)`
-  ${ tw`font-sans no-underline text-xs text-grey-darkest hover:text-blue-dark` }
+  ${ tw`inline-block mb-1 font-sans no-underline text-xs text-grey-darkest p-1 pr-2 pl-2 mr-1 bg-grey-lighter rounded hover:text-white hover:bg-grey-dark ` }
 `
 
 export const Content = styled.div`
-  ${ tw`flex-grow font-sans text-black text-lg leading-loose p-8 pb-1 overflow-hidden` };
+  ${ tw`font-sans text-black text-sm leading-loose p-5 pb-1 overflow-hidden md:text-lg md:p-8 md:pb-2` };
 `
 
 export const Image = styled(Img)`

@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import tw from 'tailwind.macro'
 
 const Title = styled.header`
-  ${ tw`flex items-center w-full pt-10` }
+  ${ tw`flex items-center w-full pt-5 md:pt-10` }
 `
 
 const StyledLink = styled(Link)`
@@ -13,7 +13,7 @@ const StyledLink = styled(Link)`
 `
 
 const Text = styled.div`
-  ${ tw`font-title font-bold text-5xl text-black-darkest` }
+  ${ tw`font-title font-bold text-3xl sm:text-4xl md:text-5xl text-black-darkest` }
 `
 
 const Header = ({ siteTitle }) => (
