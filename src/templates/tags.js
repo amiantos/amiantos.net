@@ -71,10 +71,10 @@ export const pageQuery = graphql`
           fields {
             slug
           }
-          excerpt(pruneLength: 570)
+          excerpt(pruneLength: 400)
           frontmatter {
             tags
-            date(formatString: "MMM Do YYYY")
+            date(formatString: "YYYY-MM-DD")
             title
             image {
               publicURL
