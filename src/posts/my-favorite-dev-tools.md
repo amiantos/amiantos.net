@@ -55,6 +55,14 @@ Speaking of art assets, at some point every developer needs icons. Even if you'r
 
 Please note that I am employed by The Noun Project, but I was a paying customer before I became an employee—nearly all the icons in Numu Tracker came from Noun Project.
 
+## Spectacle
+
+Near the end of my last job I ended up using Windows 10 for a while. I quickly got addicted to its nice window management features, where you can [quickly slot windows into either side of the screen](https://www.digitaltrends.com/computing/how-to-split-your-screen-in-windows-10/). This is super helpful when you're programming in one window but want to reference docs in the other, but don't want to have to fiddle with manually sizing your windows all the time.
+
+While macOS doesn't have anything like this built in, [Spectacle](https://www.spectacleapp.com/) does nearly the same job. It's not as slick as Windows 10's Expose-like window chooser, but that doesn't really matter to me.
+
+The major keyboard shortcuts that I use are `Alt + Cmd + (Arrow Key)` for slotting a window into the left or right side of the screen—note that if you hit the shortcut multiple times it'll switch between three sizes—and the modifiers for these shortcuts which allow you to slot apps into four quandrants instead of splitting up the screen, `Ctrl + Cmd + (Arrow Key)` for putting apps in the top left or right, and `Shift + Ctrl + Cmd + (Arrow Key)` for putting apps in the bottom left or right.
+
 ### Black
 
 This one is Python specific, but after I discovered [**Black**](https://github.com/ambv/black)—I'm so sorry—I don't think I could ever go back. Black is an automatic code formatter for Python projects—basically it means that I no longer have to worry about whether I'm using single quotes or double quotes consistently, or that I have enough white space between my function definitions. It also ensures formatting consistency throughout an entire project no matter who is developing for it. It really makes a big difference to my development quality of life, and saves me a lot of time that would be otherwise spent fiddling with or deciding on formatting.
