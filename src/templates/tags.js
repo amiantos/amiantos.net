@@ -7,7 +7,7 @@ import styled from 'styled-components'
 import tw from 'tailwind.macro'
 
 const TagHeader = styled.div`
-  ${ tw`font-sans text-center bg-black-monokai rounded shadow-lg text-xl text-grey-lightest p-6 m-4` }
+  ${ tw`opacity-50 font-sans text-center bg-black-monokai rounded-lg shadow-lg sm:text-lg md:text-xl text-grey-lightest p-6 m-2 sm:m-4` }
 `
 const ExcerptContainer = styled.div`
   ${ tw`z-40` }
@@ -22,7 +22,7 @@ const Tags = ({ pageContext, data }) => {
 
   return (
     <>
-      <SEO title={ tag } keywords={[`gatsby`, `application`, `react`]} />
+      <SEO title={ `posts tagged '` + tag + `'` }  keywords={[`gatsby`, `application`, `react`]} />
       <TagHeader>{tagHeader}</TagHeader>
       <ExcerptContainer>
         {edges.map(({ node }, i) => (
