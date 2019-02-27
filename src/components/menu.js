@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import tw from 'tailwind.macro'
 
 const Menu = styled.ul`
-  ${ tw`relative flex items-center justify-center list-reset mx-auto pb-0 md:pb-4` }
+  ${ tw`relative flex items-center justify-center list-reset mx-auto p-0 md:pb-4` }
 `
 
 const MenuItem = styled.li`
@@ -19,9 +19,6 @@ export default () => {
   return (
     <nav>
       <Menu>
-        <MenuItem>
-          <MenuLink to='/about'>About</MenuLink>
-        </MenuItem>
         <MenuItem>
           <MenuLink to='/tags/programming'>Programming</MenuLink>
         </MenuItem>
