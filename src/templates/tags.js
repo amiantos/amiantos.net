@@ -5,6 +5,8 @@ import SEO from '../components/seo'
 import Excerpt from '../components/excerpt'
 import styled from 'styled-components'
 import tw from 'tailwind.macro'
+import About from '../components/about'
+import Divider from '../components/divider'
 
 const TagHeader = styled.div`
   ${ tw`opacity-50 font-sans text-center bg-black-monokai rounded-lg shadow-lg sm:text-lg md:text-xl text-grey-lightest p-6 m-2 sm:m-4` }
@@ -29,6 +31,8 @@ const Tags = ({ pageContext, data }) => {
           <Excerpt data={node} i={i} key={i} />
         ))}
       </ExcerptContainer>
+      <Divider />
+      <About />
     </>
   )
 }

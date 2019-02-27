@@ -11,7 +11,9 @@ import {
   TagLink
 } from '../styles/post'
 import SEO from '../components/seo'
+import About from '../components/about'
 import kebabCase from 'lodash/kebabCase'
+import Divider from '../components/divider'
 
 export default ({ data }) => {
   const post = data.markdownRemark
@@ -43,6 +45,8 @@ export default ({ data }) => {
           </Content>
         </Post>
       </PostContainer>
+      <Divider />
+      <About />
     </>
   )
 }

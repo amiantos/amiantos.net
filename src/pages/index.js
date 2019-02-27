@@ -5,6 +5,8 @@ import tw from 'tailwind.macro'
 
 import SEO from '../components/seo'
 import Excerpt from '../components/excerpt'
+import About from '../components/about'
+import Divider from '../components/divider'
 
 const ExcerptContainer = styled.div`
   ${ tw`z-40` }
@@ -15,6 +17,8 @@ const IndexPage = props => {
   return (
     <>
       <SEO title="home" keywords={[`gatsby`, `application`, `react`]} />
+      <About />
+      <Divider />
       <ExcerptContainer>
         {postList.edges.map(({ node }, i) => (
           <Excerpt data={node} i={i} key={i} />
