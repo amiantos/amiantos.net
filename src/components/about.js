@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import tw from 'tailwind.macro'
 import { PostContainer } from '../styles/post';
-import bradProfile from '../images/brad-profile.jpg'
+import bradProfile from '../../images/brad-profile.jpg'
 
 const About = styled.div`
   ${ tw`relative bg-white rounded-lg shadow-lg overflow-hidden mx-auto clearfix p-5 pb-1 md:p-8 md:pb-2` }
@@ -31,7 +31,7 @@ export default () => {
 
           <p>I build <a href="https://itunes.apple.com/us/app/numu-new-music-tracker/id1158641228?mt=8"><strong></strong>Numu Tracker</a>, a service that makes it easy to keep track of music you want to listen to. It's open source front to back, you can find out more <a href="https://github.com/numutracker/">on GitHub</a>.</p>
 
-          <p>Find me on <a href="https://www.twitter.com/amiantos">Twitter</a>, <a href="https://www.linkedin.com/in/amiantos/">LinkedIn</a>, <a href="https://github.com/amiantos">GitHub</a>, or shoot me an <a href="mailto:amiantos@icloud.com">email</a>.</p>
+          <p>Find me on <a href="https://www.twitter.com/amiantos">Twitter</a>, <a href="https://github.com/amiantos">GitHub</a>, and <a href="https://www.linkedin.com/in/amiantos/">LinkedIn</a>.</p>
         </AboutContent>
       </About>
     </PostContainer>
