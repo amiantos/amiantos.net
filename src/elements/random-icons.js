@@ -18,12 +18,16 @@ function randomIndex (animations) {
 
 const randomIcon = index => {
   let shape = 'triangle'
-  switch (getRandomInt(1, 3)) {
-  case 1:
+  const x = getRandomInt(1, 20)
+  switch (true) {
+  case (x < 6):
     shape = 'square'
     break
-  case 2:
+  case (x < 12):
     shape = 'circle'
+    break
+  case (x === 20):
+    shape = 'pentagram'
     break
   default:
     break
