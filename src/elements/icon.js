@@ -2,10 +2,10 @@ import React from 'react'
 import styled from 'styled-components'
 import tw from 'tailwind.macro'
 
-import triangleSVG from '../images/triangle.svg'
-import squareSVG from '../images/square.svg'
-import circleSVG from '../images/circle.svg'
-import pentagramSVG from '../images/pentagram.svg'
+import triangleSVG from '../../images/triangle.svg'
+import squareSVG from '../../images/square.svg'
+import circleSVG from '../../images/circle.svg'
+import pentagramSVG from '../../images/pentagram.svg'
 import { RotateSlow } from '../styles/animations'
 
 const Wrapper = styled.div`

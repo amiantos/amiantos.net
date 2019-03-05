@@ -22,14 +22,14 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/images`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `posts`,
-        path: `${__dirname}/src/posts`,
+        path: `${__dirname}/posts`,
       },
     },
     {
@@ -67,13 +67,13 @@ module.exports = {
         background_color: `white`,
         theme_color: `white`,
         display: `minimal-ui`,
-        icon: `src/images/amiantos-logo.png`,
+        icon: `images/amiantos-logo.png`,
       },
     },
     {
       resolve: `gatsby-plugin-favicon`,
       options: {
-        logo: `./src/images/amiantos-logo.png`
+        logo: `./images/amiantos-logo.png`
       }
     },
     {
