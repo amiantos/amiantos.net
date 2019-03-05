@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `amiantos.net`,
     author: `Brad Root`,
-    description: `Personal blog covering topics such as dogs, programming, cycling, and more.`,
+    description: `Sometimes I'll write about programming here and post photos.`,
     homeCity: `Los Angeles`,
   },
   plugins: [
@@ -22,14 +22,14 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/images`,
+        path: `${ __dirname }/images`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `posts`,
-        path: `${__dirname}/posts`,
+        path: `${ __dirname }/posts`,
       },
     },
     {

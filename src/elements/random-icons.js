@@ -34,9 +34,15 @@ const randomIcon = index => {
   }
 
   let fill = '#eee'
-  switch (getRandomInt(1, 2)) {
+  switch (getRandomInt(1, 4)) {
   case 1:
     fill = '#ddd'
+    break
+  case 2:
+    fill = '#f0f0f0'
+    break
+  case 3:
+    fill = '#e3e3e3'
     break
   default:
     break
@@ -60,7 +66,7 @@ const randomIcon = index => {
       fill={fill}
       animation={AnimationType}
       rotate={ getRandomInt(0, 1) }
-      key={index} 
+      key={index}
     />
   )
 }
