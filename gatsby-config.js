@@ -36,6 +36,7 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          `gatsby-remark-responsive-iframe`,
           {
             resolve: `gatsby-remark-prismjs`,
             options: {
@@ -51,6 +52,7 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 960,
+              quality: 80,
             },
           },
         ],
