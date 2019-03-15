@@ -4,6 +4,7 @@ module.exports = {
     author: `Brad Root`,
     description: `Sometimes I'll write about programming here and post photos.`,
     homeCity: `Los Angeles`,
+    siteUrl: `https://amiantos.net`
   },
   plugins: [
     {
@@ -13,6 +14,72 @@ module.exports = {
           families: ['Vollkorn: 400,700']
         }
       }
+    },
+    {
+      resolve: `gatsby-plugin-feed`,
+      options: {
+        query: `
+          {
+            site {
+              siteMetadata {
+                title
+                description
+                siteUrl
+                site_url: siteUrl
+              }
+            }
+          }
+        `,
+        feeds: [
+          {
+            serialize: ({ query: { site, allMarkdownRemark } }) => {
+              return allMarkdownRemark.edges.map(edge => {
+                return Object.assign({}, edge.node.frontmatter, {
+                  description: edge.node.excerpt,
+                  date: edge.node.frontmatter.date,
+                  url: site.siteMetadata.siteUrl + edge.node.fields.slug,
+                  guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
+                  custom_elements: [
+                    edge.node.frontmatter.image && ({ "media:content": {
+                      _attr: {
+                        url: site.siteMetadata.siteUrl + edge.node.frontmatter.image.publicURL,
+                        media: 'image',
+                        type: 'image/jpeg',
+                        "xmlns:media": "http://search.yahoo.com/mrss/",
+                      }
+                    } }),
+                    { "content:encoded": edge.node.html }],
+                })
+              })
+            },
+            query: `
+              {
+                allMarkdownRemark(
+                  limit: 1000,
+                  sort: { order: DESC, fields: [frontmatter___date] }
+                ) {
+                  edges {
+                    node {
+                      excerpt
+                      html
+                      fields { slug }
+                      frontmatter {
+                        title
+                        date
+                        image {
+                          publicURL
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            `,
+            output: "/rss.xml",
+            title: "Gatsby RSS Feed",
+          },
+        ],
+      },
     },
     `gatsby-plugin-layout`,
     `gatsby-plugin-svg-sprite`,
