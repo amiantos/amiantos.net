@@ -8,27 +8,31 @@ export const PostContainer = styled.div`
 `
 
 export const Post = styled.div`
-  ${ tw`bg-white rounded-lg shadow-lg overflow-hidden` }
+  ${ tw`bg-white rounded shadow overflow-hidden` }
 `
 
-export const Title = styled.div`
-  ${ tw`font-sans bg-white text-lg font-bold text-black-monokai pb-3 pt-5 pl-5 pr-5 sm:text-xl md:text-2xl md:pt-8 md:pl-8 md:pr-8 md:pb-4` };
+export const Title = styled(Link)`
+  ${ tw`block font-sans bg-white no-underline text-lg font-bold text-black-monokai pb-3 pt-5 pl-5 pr-5 sm:text-xl md:text-2xl md:pl-8 md:pr-8 md:pb-4` };
 `
 
 export const Meta = styled.div`
-${ tw`text-xs text-grey-darkest pb-0 pt-2 ml-5 mr-5 md:ml-8 md:mr-8` };
+${ tw`text-xs text-grey-darkest mt-5 ml-5 md:ml-8 md:mt-10` };
 `
 
 export const TagLink = styled(Link)`
-  ${ tw`inline-block mb-1 font-sans no-underline text-xs text-grey-darkest p-1 pr-2 pl-2 mr-1 bg-grey-lighter rounded hover:text-white hover:bg-grey-dark ` }
+  ${ tw`inline-block font-bold uppercase mb-1 font-sans italic no-underline text-xs text-white p-1 pr-3 pl-3 pb-1 mr-1 bg-gumbo rounded-full hover:underline` }
+`
+
+export const DateLink = styled(Link)`
+  ${ tw`block font-sans font-bold no-underline text-base text-gumbo mb-3 ml-5 md:ml-8` }
 `
 
 export const Content = styled.div`
-  ${ tw`font-sans text-black text-sm leading-loose p-5 pt-4 pb-1 overflow-hidden md:text-lg md:p-8 md:pb-2 md:pt-5` };
+  ${ tw`font-sans text-black text-sm leading-loose p-5 pt-4 pb-1 overflow-hidden md:text-base md:p-8 md:pb-2 md:pt-5` };
 `
 
 export const Image = styled(Img)`
-  ${ tw`mb-6 rounded-lg` }
+  ${ tw`mb-6 rounded shadow` }
 `
 
 export const ExcerptContainer = styled.div`

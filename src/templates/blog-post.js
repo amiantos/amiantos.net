@@ -22,11 +22,7 @@ export default ({ data }) => {
       <SEO title={post.frontmatter.title} keywords={post.frontmatter.tags} description={post.frontmatter.description || post.excerpt}/>
       <PostContainer>
         <Post>
-          <Title>{post.frontmatter.title}</Title>
           <Meta>
-            <TagLink to={post.fields.slug}>
-              {post.frontmatter.date}
-            </TagLink>
             { post.frontmatter.tags.map((tag, index) => {
               return (
                 <TagLink key={index} to={`/tags/${ kebabCase(tag) }/`}>
@@ -35,6 +31,10 @@ export default ({ data }) => {
               )
             })}
           </Meta>
+          <Title to={post.fields.slug}>{post.frontmatter.title}</Title>
+          <DateLink to={post.fields.slug}>
+            {post.frontmatter.date}
+          </DateLink>
           <Content>
             {post.frontmatter.image && (
               <a href={post.frontmatter.image.publicURL}>
@@ -62,16 +62,8 @@ export const query = graphql`
       frontmatter {
         title
         tags
-        date(formatString: "YYYY-MM-DD")
+        date(formatString: "MMM D, Y")
         description
-        image {
-          publicURL
-          childImageSharp{
-            fluid(maxWidth: 2000) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
       }
     }
   }

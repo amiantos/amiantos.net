@@ -5,7 +5,7 @@ import { PostContainer } from '../styles/post';
 import bradProfile from '../../images/brad-profile.jpg'
 
 const About = styled.div`
-  ${ tw`relative bg-white rounded-lg shadow-lg overflow-hidden mx-auto clearfix p-5 pb-1 md:p-8 md:pb-2` }
+  ${ tw`relative bg-white rounded shadow overflow-hidden mx-auto clearfix p-5 pb-1 md:p-8 md:pb-2` }
 `
 
 const AboutTitle = styled.div`
@@ -17,7 +17,7 @@ const AboutContent = styled.div`
 `
 
 const ProfilePhoto = styled.img`
-  ${ tw`relative w-1/3 max-w-xs rounded-lg float-right clearfix ml-2 mb-2 mt-3 sm:ml-4 sm:mb-4 sm:mt-4` }
+  ${ tw`relative w-1/3 max-w-xs rounded float-right clearfix ml-2 mb-2 mt-3 sm:ml-4 sm:mb-4 sm:mt-4` }
 `
 
 export default () => {

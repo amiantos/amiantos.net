@@ -41,16 +41,8 @@ export const query = graphql`{
         excerpt(pruneLength: 400)
         frontmatter {
           tags
-          date(formatString: "YYYY-MM-DD")
+          date(formatString: "MMM D, Y")
           title
-          image {
-            publicURL
-            childImageSharp{
-              fluid(maxWidth: 800) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
         }
       }
     }
