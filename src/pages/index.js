@@ -41,7 +41,7 @@ export const query = graphql`{
         excerpt(pruneLength: 400)
         frontmatter {
           tags
-          date(formatString: "YYYY-MM-DD")
+          date(formatString: "MMM D, Y")
           title
         }
       }

@@ -44,6 +44,9 @@ let defaultConfig = require('tailwindcss/defaultConfig')()
 */
 
 let colors = {
+  'olive': '#676A51',
+  'gumbo': '#839EA7',
+  
   'transparent': 'transparent',
 
   'black-monokai': '#272822',

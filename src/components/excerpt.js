@@ -7,21 +7,17 @@ import {
   Content,
   Image,
   Meta,
-  TagLink
+  TagLink,
+  DateLink
 } from '../styles/post'
 import kebabCase from 'lodash/kebabCase'
+import { Link } from 'gatsby';
 
 export default ({ data, i }) => {
   return (
     <ExcerptContainer>
       <Post>
-        <ExcerptLink to={data.fields.slug}>
-          <Title>{data.frontmatter.title}</Title>
-        </ExcerptLink>
         <Meta>
-          <TagLink to={data.fields.slug}>
-            {data.frontmatter.date}
-          </TagLink>
           { data.frontmatter.tags.map((tag, index) => {
             return (
               <TagLink key={index} to={`/tags/${ kebabCase(tag) }/`}>
@@ -30,6 +26,10 @@ export default ({ data, i }) => {
             )
           })}
         </Meta>
+        <Title to={data.fields.slug}>{data.frontmatter.title}</Title>
+        <DateLink to={data.fields.slug}>
+          {data.frontmatter.date}
+        </DateLink>
         <Content>
           <ExcerptLink to={data.fields.slug}>
             {data.frontmatter.image && (<Image fluid={data.frontmatter.image.childImageSharp.fluid} />)}

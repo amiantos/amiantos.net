@@ -2,7 +2,7 @@
 title: What I'm Up To - Week 19, 2019
 date: '2019-05-12'
 description: "What I did over the past week"
-tags: ['programming']
+tags: ['programming', 'aeongarden', 'numu']
 ---
 
 I've decided to try to set myself a weekly goal of writing about whatever I did or learned about this week, just to get into the habit of writing regularly again. I'm always working on something, so I figure I should be able to find something to say about it.
