@@ -4,7 +4,7 @@ import tw from 'tailwind.macro'
 import { PostContainer } from '../styles/post'
 
 const Divider = styled.hr`
-  ${ tw`relative border-solid border-grey-light ml-12 mr-12 mt-2` }
+  ${ tw`relative border-solid border-grey-light ml-12 mr-12 mt-2 mb-2` }
 `
 
 export default () => {

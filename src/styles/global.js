@@ -28,6 +28,23 @@ const GlobalStyle = createGlobalStyle`
     margin-top:0;
     margin-bottom:1.3em;
   }
+  hr {
+    border:0;
+    border-top:1px solid #ddd;
+    margin:30px;
+  }
+  h1, h2, h3, h4 {
+    margin-top:0;
+  }
+  blockquote {
+    border-left:2px solid #ddd;
+    padding-left:10px;
+    font-style:italic;
+    margin-left:10px;
+  }
+  ul, ol {
+    padding-left:20px;
+  }
 `
 
 export default GlobalStyle

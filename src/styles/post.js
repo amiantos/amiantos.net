@@ -8,7 +8,7 @@ export const PostContainer = styled.div`
 `
 
 export const Post = styled.div`
-  ${ tw`bg-white rounded-lg shadow-lg overflow-hidden` }
+  ${ tw`bg-white rounded shadow overflow-hidden` }
 `
 
 export const Title = styled.div`
@@ -24,11 +24,11 @@ export const TagLink = styled(Link)`
 `
 
 export const Content = styled.div`
-  ${ tw`font-sans text-black text-sm leading-loose p-5 pt-4 pb-1 overflow-hidden md:text-lg md:p-8 md:pb-2 md:pt-5` };
+  ${ tw`font-sans text-black text-sm leading-loose p-5 pt-4 pb-1 overflow-hidden md:text-base md:p-8 md:pb-2 md:pt-5` };
 `
 
 export const Image = styled(Img)`
-  ${ tw`mb-6 rounded-lg` }
+  ${ tw`mb-6 rounded shadow` }
 `
 
 export const ExcerptContainer = styled.div`

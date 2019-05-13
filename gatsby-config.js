@@ -39,16 +39,6 @@ module.exports = {
                   date: edge.node.frontmatter.date,
                   url: site.siteMetadata.siteUrl + edge.node.fields.slug,
                   guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
-                  custom_elements: [
-                    edge.node.frontmatter.image && ({ "media:content": {
-                      _attr: {
-                        url: site.siteMetadata.siteUrl + edge.node.frontmatter.image.publicURL,
-                        media: 'image',
-                        type: 'image/jpeg',
-                        "xmlns:media": "http://search.yahoo.com/mrss/",
-                      }
-                    } }),
-                    { "content:encoded": edge.node.html }],
                 })
               })
             },
@@ -66,9 +56,6 @@ module.exports = {
                       frontmatter {
                         title
                         date
-                        image {
-                          publicURL
-                        }
                       }
                     }
                   }
