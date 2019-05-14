@@ -17,10 +17,10 @@ export default ({ data, i }) => {
   return (
     <ExcerptContainer>
       <Post>
-        <Title to={data.fields.slug}>{data.frontmatter.title}</Title>
         <DateLink to={data.fields.slug}>
           {data.frontmatter.date}
         </DateLink>
+        <Title to={data.fields.slug}>{data.frontmatter.title}</Title>
         <Meta>
           { data.frontmatter.tags.map((tag, index) => {
             return (

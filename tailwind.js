@@ -270,6 +270,7 @@ module.exports = {
   */
 
   textSizes: {
+    'xxs': '.60rem',     
     'xs': '.75rem',     // 12px
     'sm': '.875rem',    // 14px
     'base': '1rem',     // 16px
@@ -728,6 +729,7 @@ module.exports = {
     '6': '1.5rem',
     '8': '2rem',
     '10': '2.5rem',
+    '11': '2.75rem',
     '12': '3rem',
     '16': '4rem',
     '20': '5rem',
