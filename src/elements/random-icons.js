@@ -18,15 +18,24 @@ function randomIndex (animations) {
 
 const randomIcon = index => {
   let shape = 'triangle'
-  const x = getRandomInt(1, 20)
+  const x = getRandomInt(1, 61)
   switch (true) {
-  case (x < 6):
+  case (x < 10):
     shape = 'square'
     break
-  case (x < 12):
+  case (x < 20):
     shape = 'circle'
     break
-  case (x === 20):
+  case (x < 30):
+    shape = 'diamond'
+    break
+  case (x < 40):
+    shape = 'hexagon'
+    break
+  case (x < 50):
+    shape = 'pentagon'
+    break
+  case (x === 61):
     shape = 'pentagram'
     break
   default:
@@ -34,15 +43,15 @@ const randomIcon = index => {
   }
 
   let fill = '#eee'
-  switch (getRandomInt(1, 4)) {
+  switch (getRandomInt(1, 3)) {
   case 1:
-    fill = '#ddd'
+    fill = '#828DB3'
     break
   case 2:
-    fill = '#f0f0f0'
+    fill = '#82B3A4'
     break
   case 3:
-    fill = '#e3e3e3'
+    fill = '#839EA7'
     break
   default:
     break
@@ -73,7 +82,7 @@ const randomIcon = index => {
 
 export const randomIcons = () => {
   let rows = []
-  for (let i = 0; i < 30; i++) {
+  for (let i = 0; i < 100; i++) {
     rows.push(randomIcon(i))
   }
   return rows
