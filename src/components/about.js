@@ -13,7 +13,7 @@ const AboutTitle = styled.div`
 `
 
 const AboutContent = styled.div`
-  ${ tw`font-sans text-black text-sm leading-loose-ish md:text-lg pt-3 md:pt-5` };
+  ${ tw`font-sans text-black text-sm leading-loose-ish md:text-base pt-3 md:pt-5` };
 `
 
 const ProfilePhoto = styled.img`
