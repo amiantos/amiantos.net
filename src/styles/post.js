@@ -24,7 +24,7 @@ export const TagLink = styled(Link)`
 `
 
 export const DateLink = styled(Link)`
-  ${ tw`block font-sans font-bold no-underline text-xs md:text-sm text-gumbo mb-5 mr-5 mt-6 md:mr-8 md:mt-10 float-right border-dotted border-0 border-b-1 border-grey-light pb-1 hover:border-grey-dark` }
+  ${ tw`block font-sans font-bold no-underline text-xs md:text-sm text-gumbo mb-5 mr-5 ml-5 mt-6 md:mr-8 md:mt-10 float-right border-dotted border-0 border-b-1 border-grey-light pb-1 hover:border-grey-dark` }
 `
 
 export const Content = styled.div`
