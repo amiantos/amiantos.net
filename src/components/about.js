@@ -17,7 +17,7 @@ const AboutContent = styled.div`
 `
 
 const ProfilePhoto = styled.img`
-  ${ tw`relative w-1/3 max-w-xs rounded float-right clearfix ml-2 mb-2 mt-3 sm:ml-4 sm:mb-4 sm:mt-4` }
+  ${ tw`relative w-1/4 max-w-xs rounded-full shadow-lg float-right clearfix ml-2 mb-2 mt-3 sm:ml-4 sm:mb-4 sm:mt-4` }
 `
 
 export default () => {
@@ -25,7 +25,7 @@ export default () => {
     <PostContainer>
       <About>
         <AboutTitle>Well hello there!</AboutTitle>
-        <ProfilePhoto src={bradProfile} alt="Brad Root's face" />
+        <ProfilePhoto src={bradProfile} title="Brad Root's most professional selfie" />
         <AboutContent>
           <p>My name is Brad Root and I'm a software engineer, music aficionado, and occasional unicyclist.</p>
 
