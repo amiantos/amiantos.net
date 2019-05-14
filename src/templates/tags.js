@@ -9,7 +9,7 @@ import About from '../components/about'
 import Divider from '../components/divider'
 
 const TagHeader = styled.div`
-  ${ tw`opacity-50 font-sans text-center bg-black-monokai rounded shadow sm:text-lg md:text-xl text-grey-lightest p-6 m-2 sm:m-4` }
+  ${ tw`opacity-75 font-sans text-center bg-gumbo rounded-full shadow sm:text-lg md:text-xl text-white text-bold p-6 m-2 sm:m-4` }
 `
 const ExcerptContainer = styled.div`
   ${ tw`z-40` }
