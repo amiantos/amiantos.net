@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import tw from 'tailwind.macro'
 
 const Title = styled.header`
-  ${ tw`flex items-center w-full pt-5 md:pt-10` }
+  ${ tw`flex items-center w-full mt-5 mb-1 md:mt-10 md:mb-5` }
 `
 
 const StyledLink = styled(Link)`
