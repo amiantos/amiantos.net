@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import tw from 'tailwind.macro'
-import { PostContainer } from '../styles/post';
+import { PostContainer } from '../styles/post'
 import bradProfile from '../../images/brad-profile.jpg'
 
 const About = styled.div`
