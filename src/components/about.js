@@ -28,8 +28,10 @@ export default () => {
         <ProfilePhoto src={bradProfile} title="Brad Root's most professional selfie" />
         <AboutContent>
           <p>My name is Brad Root and I'm a software engineer, music aficionado, and occasional unicyclist.</p>
-
-          <p>I build <a href="https://itunes.apple.com/us/app/numu-new-music-tracker/id1158641228?mt=8"><strong></strong>Numu Tracker</a>, a service that makes it easy to keep track of music you want to listen to. It's open source front to back, you can find out more <a href="https://github.com/numutracker/">on GitHub</a>.</p>
+          
+          <p>In my spare time, I build <a href="https://github.com/amiantos">open source software</a>, and write about my experiences as a programmer here on this blog.</p>
+          
+          <p>If you enjoy the apps I build or articles I write, please consider supporting me <a href="https://www.patreon.com/amiantos">by becoming a patron</a>.</p>
 
           <p>Find me on <a href="https://www.twitter.com/amiantos">Twitter</a>, <a href="https://github.com/amiantos">GitHub</a>, and <a href="https://www.linkedin.com/in/amiantos/">LinkedIn</a>.</p>
         </AboutContent>

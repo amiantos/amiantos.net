@@ -40,5 +40,5 @@ export const ExcerptContainer = styled.div`
 `
 
 export const ExcerptLink = styled(Link)`
-  ${ tw`block no-underline` }
+  ${ tw`block no-underline text-black` }
 `
