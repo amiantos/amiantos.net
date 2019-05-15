@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import tw from 'tailwind.macro'
-import { PostContainer } from '../styles/post';
+import { PostContainer } from '../styles/post'
 import bradProfile from '../../images/brad-profile.jpg'
 
 const About = styled.div`
@@ -13,11 +13,11 @@ const AboutTitle = styled.div`
 `
 
 const AboutContent = styled.div`
-  ${ tw`font-sans text-black text-sm leading-loose-ish md:text-lg pt-3 md:pt-5` };
+  ${ tw`font-sans text-black text-sm leading-loose-ish md:text-base pt-3 md:pt-5` };
 `
 
 const ProfilePhoto = styled.img`
-  ${ tw`relative w-1/3 max-w-xs rounded float-right clearfix ml-2 mb-2 mt-3 sm:ml-4 sm:mb-4 sm:mt-4` }
+  ${ tw`relative w-1/4 max-w-xs rounded-full shadow-lg float-right clearfix border-solid border-8 border-gumbo ml-2 mb-2 mt-3 sm:ml-4 sm:mb-4 sm:mt-4` }
 `
 
 export default () => {
@@ -25,11 +25,13 @@ export default () => {
     <PostContainer>
       <About>
         <AboutTitle>Well hello there!</AboutTitle>
-        <ProfilePhoto src={bradProfile} alt="Brad Root's face" />
+        <ProfilePhoto src={bradProfile} title="Brad Root's most professional selfie" />
         <AboutContent>
           <p>My name is Brad Root and I'm a software engineer, music aficionado, and occasional unicyclist.</p>
-
-          <p>I build <a href="https://itunes.apple.com/us/app/numu-new-music-tracker/id1158641228?mt=8"><strong></strong>Numu Tracker</a>, a service that makes it easy to keep track of music you want to listen to. It's open source front to back, you can find out more <a href="https://github.com/numutracker/">on GitHub</a>.</p>
+          
+          <p>In my spare time, I build <a href="https://github.com/amiantos">open source software</a>, and write about my experiences as a programmer here on this blog.</p>
+          
+          <p>If you enjoy the apps I build or articles I write, please consider supporting me <a href="https://www.patreon.com/amiantos">by becoming a patron</a>.</p>
 
           <p>Find me on <a href="https://www.twitter.com/amiantos">Twitter</a>, <a href="https://github.com/amiantos">GitHub</a>, and <a href="https://www.linkedin.com/in/amiantos/">LinkedIn</a>.</p>
         </AboutContent>

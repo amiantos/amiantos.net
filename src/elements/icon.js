@@ -6,6 +6,9 @@ import triangleSVG from '../../images/triangle.svg'
 import squareSVG from '../../images/square.svg'
 import circleSVG from '../../images/circle.svg'
 import pentagramSVG from '../../images/pentagram.svg'
+import hexagonSVG from '../../images/hexagon.svg'
+import diamondSVG from '../../images/diamond.svg'
+import pentagonSVG from '../../images/pentagon.svg'
 import { RotateSlow } from '../styles/animations'
 
 const Wrapper = styled.div`
@@ -26,6 +29,15 @@ const icons = {
   },
   pentagram: {
     resource: `#${ pentagramSVG.id }`,
+  },
+  diamond: {
+    resource: `#${ diamondSVG.id }`,
+  },
+  hexagon: {
+    resource: `#${ hexagonSVG.id }`,
+  },
+  pentagon: {
+    resource: `#${ pentagonSVG.id }`,
   }
 }
 
@@ -39,7 +51,7 @@ const Icon = ({ icon, size, top, left, fill, animation, rotate }) => {
     <Wrapper top={top} left={left}>
       <AnimationType>
         <Rotation>
-          <svg style={{ width: `${ size }`, height: `${ size }` }} fill={fill}>
+          <svg style={{ width: `${ size }`, height: `${ size }`, opacity: 0.05 }} fill={fill}>
             <use xlinkHref={ icons[icon].resource } />
           </svg>
         </Rotation>

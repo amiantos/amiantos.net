@@ -22,7 +22,7 @@ const GlobalStyle = createGlobalStyle`
     background-color:#f5f5f5;
   }
   a {
-    color: #272822;
+    color: #3C484D;
   }
   p {
     margin-top:0;

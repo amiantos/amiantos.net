@@ -22,6 +22,10 @@ export default ({ data }) => {
       <SEO title={post.frontmatter.title} keywords={post.frontmatter.tags} description={post.frontmatter.description || post.excerpt}/>
       <PostContainer>
         <Post>
+          <DateLink to={post.fields.slug}>
+            {post.frontmatter.date}
+          </DateLink>
+          <Title to={post.fields.slug}>{post.frontmatter.title}</Title>
           <Meta>
             { post.frontmatter.tags.map((tag, index) => {
               return (
@@ -31,10 +35,6 @@ export default ({ data }) => {
               )
             })}
           </Meta>
-          <Title to={post.fields.slug}>{post.frontmatter.title}</Title>
-          <DateLink to={post.fields.slug}>
-            {post.frontmatter.date}
-          </DateLink>
           <Content>
             {post.frontmatter.image && (
               <a href={post.frontmatter.image.publicURL}>
