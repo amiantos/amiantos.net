@@ -8,8 +8,8 @@ import Excerpt from '../components/excerpt'
 import About from '../components/about'
 import Divider from '../components/divider'
 
-import numuShot from '../../images/numu-tracker-shot.jpg'
-import aeonShot from '../../images/aeon-garden-shot.jpg'
+import numuShot from '../../images/numu-tracker-shot2.jpg'
+import aeonShot from '../../images/aeon-garden-shot2.jpg'
 import appleSVG from '../../images/apple-logo.svg'
 import githubSVG from '../../images/github-logo.svg'
 
@@ -26,7 +26,7 @@ const App = styled.div`
 `
 
 const AppPhoto = styled.img`
-  ${ tw`w-full block mb-0 p-0 pt-4` }
+  ${ tw`w-full block mb-0 p-0 pt-2` }
 `
 
 const AppName = styled.div`

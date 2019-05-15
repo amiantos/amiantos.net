@@ -17,7 +17,7 @@ const AboutContent = styled.div`
 `
 
 const ProfilePhoto = styled.img`
-  ${ tw`relative w-1/4 max-w-xs rounded-full shadow-lg float-right clearfix ml-2 mb-2 mt-3 sm:ml-4 sm:mb-4 sm:mt-4` }
+  ${ tw`relative w-1/4 max-w-xs rounded-full shadow-lg float-right clearfix border-solid border-8 border-gumbo ml-2 mb-2 mt-3 sm:ml-4 sm:mb-4 sm:mt-4` }
 `
 
 export default () => {
