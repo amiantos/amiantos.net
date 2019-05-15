@@ -12,13 +12,14 @@ import numuShot from '../../images/numu-tracker-shot2.jpg'
 import aeonShot from '../../images/aeon-garden-shot2.jpg'
 import appleSVG from '../../images/apple-logo.svg'
 import githubSVG from '../../images/github-logo.svg'
+import IconLink from '../components/icon-link';
 
 const ExcerptContainer = styled.div`
   ${ tw`z-40` }
 `
 
 const AppContainer = styled.div`
-  ${ tw`inline-block align-top w-1/2` }
+  ${ tw`md:inline-block align-top md:w-1/2 w-full block` }
 `
 
 const App = styled.div`
@@ -49,23 +50,10 @@ const IndexPage = props => {
           <AppName>Numu Tracker</AppName>
           <AppContent>
             <p>Numu Tracker can keep you up to date on music by the artists you love the most. Part to-do list, part reminders and alerts, Numu gives you the tools to ensure you never miss out on new albums.</p>
-            <p>
-              <center>
-                <a href="https://itunes.apple.com/us/app/numu-new-music-tracker/id1158641228">
-                  <svg style={{ width: `20px`, height: `20px`, opacity: 1 }} fill="#000">
-                    <use xlinkHref={`#${ appleSVG.id }`} />
-                  </svg>
-                  View on App Store
-                </a>
-                &nbsp;&nbsp;
-                <a href="https://www.github.com/numutracker">
-                  <svg style={{ width: `20px`, height: `20px`, opacity: 1 }} fill="#000">
-                    <use xlinkHref={`#${ githubSVG.id }`} />
-                  </svg>
-                  View on GitHub
-                </a>
-              </center>
-            </p>
+            <center>
+              <IconLink link="https://itunes.apple.com/us/app/numu-new-music-tracker/id1158641228" icon={appleSVG} text="View on App Store" /> 
+              <IconLink link="https://www.github.com/numutracker" icon={githubSVG} text="View on Github" />
+            </center>
           </AppContent>
         </App>
       </AppContainer>
@@ -75,16 +63,9 @@ const IndexPage = props => {
           <AppName>Aeon Garden</AppName>
           <AppContent>
             <p>Aeon Garden is an abstract artificial life toy for iOS, tvOS, and macOS. A virtual fish tank for your screens, watch creatures evolve to generative ambient noise.</p>
-            <p>
-              <center>
-                <a href="https://www.github.com/amiantos/aeongarden">
-                  <svg style={{ width: `20px`, height: `20px`, opacity: 1 }} fill="#000">
-                    <use xlinkHref={`#${ githubSVG.id }`} />
-                  </svg>
-                  View on GitHub
-                </a>
-              </center>
-            </p>  
+            <center>
+              <IconLink link="https://www.github.com/amiantos/aeongarden" icon={githubSVG} text="View on Github"/>
+            </center>
           </AppContent>
         </App>
       </AppContainer>
