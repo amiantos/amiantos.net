@@ -23,7 +23,7 @@ const AppContainer = styled.div`
 `
 
 const App = styled.div`
-  ${ tw`bg-white rounded shadow overflow-hidden m-5` }
+  ${ tw`bg-white rounded shadow overflow-hidden m-4` }
 `
 
 const AppPhoto = styled.img`
@@ -62,7 +62,7 @@ const IndexPage = props => {
           <AppPhoto src={aeonShot} />
           <AppName>Aeon Garden</AppName>
           <AppContent>
-            <p>Aeon Garden is an abstract artificial life toy for iOS, tvOS, and macOS. A virtual fish tank for your screens, watch creatures evolve to generative ambient noise.</p>
+            <p>Aeon Garden is an abstract artificial life toy for iOS, tvOS, and macOS. A virtual fish tank for all your screens, watch creatures evolve to generative ambient soundscapes.</p>
             <center>
               <IconLink link="https://www.github.com/amiantos/aeongarden" icon={githubSVG} text="View on Github"/>
             </center>

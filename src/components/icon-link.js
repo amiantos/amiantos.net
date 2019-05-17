@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import tw from 'tailwind.macro'
 
 const StyledLink = styled.a`
-  ${ tw`inline-block ml-3 mr-3 mb-4 no-underline hover:text-gumbo` }
+  ${ tw`inline-block ml-4 mr-4 mb-4 no-underline hover:text-gumbo` }
 `
 const StyledSVG = styled.svg`
   ${ tw`mr-1` }
