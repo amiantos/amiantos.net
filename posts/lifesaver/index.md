@@ -1,7 +1,7 @@
 ---
 title: Life Saver - A Conway's Game of Life Screensaver
 date: "2019-05-26"
-description: "What I did this week: Website Updates + Life Saver!"
+description: "Life Saver is an artistic implementation of Conway's Game of Life"
 tags: ['programming', 'lifesaver', 'swift', 'macos']
 ---
 
