@@ -53,7 +53,6 @@ const IndexPage = props => {
     <>
       <SEO title="home" keywords={[`gatsby`, `application`, `react`]} />
       <About />
-      <Divider />
       <AppsContainer>
         <AppContainer>
           <App>
