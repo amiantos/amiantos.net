@@ -140,5 +140,6 @@ module.exports = {
     },
     `gatsby-plugin-remove-serviceworker`,
     `gatsby-plugin-catch-links`,
+    `gatsby-plugin-twitter`
   ],
 }
