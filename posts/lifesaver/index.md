@@ -1,6 +1,6 @@
 ---
-title: Life Saver - A Conway's Game of Life Screensaver
-date: "2019-05-26"
+title: Life Saver v1.1 - A Game of Life Screensaver
+date: "2019-06-22"
 description: "Life Saver is an artistic implementation of Conway's Game of Life"
 tags: ['programming', 'lifesaver', 'swift', 'macos']
 ---
@@ -11,10 +11,11 @@ Life Saver is an abstract macOS screensaver based on [Conway's Game of Life](htt
 
 <br/>
 
-![Life Saver Screenshots](lifesaver-screenshots.png "Life Saver Screenshots")
+![Life Saver Screenshots](lifesaver-screenshots-1.1.png "Life Saver Screenshots")
 
-## <p style="text-align: center;"> **[Download Life Saver v1.0 for macOS](https://s3.amazonaws.com/amiantos/lifesaver-1.0.pkg)** </p>
+## <p style="text-align: center;"> **[Download Life Saver v1.1 for macOS](https://s3.amazonaws.com/amiantos/lifesaver-1.1.pkg)** </p>
 
+* [See what's new in version 1.1](https://github.com/amiantos/lifesaver/releases/tag/v1.1) on GitHub.
 * Life Saver is free, open source software. If you like it, please [star it on GitHub](https://www.github.com/amiantos/lifesaver).
 * If you'd like to know more about Life Saver's development, check the ["lifesaver" tag](http://localhost:8000/tags/lifesaver/) on this here blog.
 * If you _really like_ Life Saver, consider [becoming a patron](https://www.patreon.com/amiantos) so I know you're into it and want more like it.
