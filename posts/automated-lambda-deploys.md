@@ -1,6 +1,6 @@
 ---
 title: Automating Python Lambda Deployments with Docker
-date: '2019-02-23'
+date: '2019-06-25'
 description: "A quick guide on how to automate Lambda deployment package creation using Docker."
 tags: ['programming', 'docker', 'lambda', 'aws', 'python']
 ---
@@ -21,7 +21,7 @@ RUN yum -y install git \
     zip \
     && yum clean all
 RUN python3 -m pip install --upgrade pip \
-    && python3 -m pip install boto3 awscli 
+    && python3 -m pip install boto3 awscli
 ```
 
 Then you need your `package.sh` file, this is the script that'll get run inside your Docker container once it's built. Note the `$LAMBDA_FUNC` environment variable. We'll be setting that when we run the container via the `Makefile`.
@@ -40,14 +40,6 @@ cd /io
 aws lambda update-function-code --function-name $LAMBDA_FUNC --zip-file fileb://lambda.zip
 
 rm -f /io/lambda.zip
-```
-
-For AWS deployment to work inside the container, we've got to set up some environment variables with our AWS credentials. To keep everything sensitive in one place, I'm using a file called `.aws-env` that we'll load into our container when we run it.
-
-```bash
-AWS_DEFAULT_REGION=<YOUR REGION>
-AWS_ACCESS_KEY_ID=<YOUR ACCESS KEY ID>
-AWS_SECRET_ACCESS_KEY=<YOUR SECRET ACCESS KEY>
 ```
 
 Before we tie it all together with the Makefile, I should clarify that I wanted this automation to be set up so that I could use it to deploy multiple different Lamdba functions to different places, so the directory structure is pretty important. In my setup, the directory structure looks like this:
@@ -74,19 +66,19 @@ So our final step is to create our `Makefile`.
 ```makefile
 deploy-lambda:
 ifdef p
-  cp -f package.sh $(shell pwd)/$(p)/package.sh
-  docker build -t lambda .
-  docker run --rm --env LAMBDA_FUNC=$(p) --env-file=.aws-env -v $(shell pwd)/$(p):/io -t lambda bash /io/package.sh
-  rm -f $(shell pwd)/$(p)/package.sh
+	cp -f package.sh $(shell pwd)/$(p)/package.sh
+	docker build -t lambda .
+	docker run --rm -e LAMBDA_FUNC=$(p) -e AWS_DEFAULT_REGION=us-east-1 -e AWS_ACCESS_KEY_ID=$(shell aws --profile default configure get aws_access_key_id) -e AWS_SECRET_ACCESS_KEY=$(shell aws --profile default configure get aws_secret_access_key) -v $(shell pwd)/$(p):/io -t lambda bash /io/package.sh
+	rm -f $(shell pwd)/$(p)/package.sh
 endif
 ```
+
+Note that we're automatically grabbing the necessary AWS access keys from our local machine and injecting them into the docker container, so that it can deploy the package to Lambda for us.
 
 Then to deploy to lambda it's as simple as writing...
 
  ```bash
  $ make deploy-lambda p=preview-function
  ```
-
-In my real world use, I actually have a secondary `deploy-lambda-qa` command that simply appends `-qa` to the end of the `LAMBDA_FUNC` variable to deploy to the testing version of the function. To make this better, you'd most likely want to make the production deployment a little more elaborate, like asking for confirmation before deploying to your production functions.
 
 That's about it! Doing this has saved me a lot of time that would have otherwise been spent running a couple different commands to deploy my Lambda functions. Now it's fast, easy, and worry-free. Again, kudos to Quilt and [their blog post](https://blog.quiltdata.com/an-easier-way-to-build-lambda-deployment-packages-with-docker-instead-of-ec2-9050cd486ba8) for doing more than half the work for me ;)
