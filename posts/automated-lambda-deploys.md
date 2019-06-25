@@ -51,9 +51,6 @@ lambda
 ├── preview-function
 │   ├── lambda_function.py
 │   └── requirements.txt
-├── validate-function
-│   └── lambda_function.py
-├── .aws-env
 ├── Dockerfile
 ├── Makefile
 └── package.sh
