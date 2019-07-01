@@ -7,7 +7,7 @@ tags: ['programming', 'lifesaver', 'swift', 'macos']
 
 Life Saver is an abstract macOS screensaver based on [Conway's Game of Life](https://www.github.com/amiantos/lifesaver). With a variety of settings and color schemes, Life Saver should satisfy designers and geeks alike.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/N4nCFUVThgg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Vv9rDZ1LMSk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br/>
 
