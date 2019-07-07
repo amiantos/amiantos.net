@@ -69,24 +69,25 @@ const IndexPage = props => {
         </AppContainer>
         <AppContainer>
           <App>
-            <AppPhoto src={aeonShot} />
-            <AppName>Aeon Garden</AppName>
+            <AppPhoto src={lifeSaverShot} />
+            <AppName>Life Saver</AppName>
             <AppContent>
-              <p>Aeon Garden is an abstract artificial life toy for iOS, tvOS, and macOS. A virtual fish tank for all your screens, watch creatures evolve to generative ambient soundscapes.</p>
+              <p>Life Saver is an implementation of Conway's Game of Life as an abstract, colorful, highly configurable Apple TV app and macOS screensaver that should please designers and nerds alike. </p>
               <center>
-                <IconLink link="https://www.github.com/amiantos/aeongarden" icon={githubSVG} text="View on Github"/>
+                <IconLink link="https://apps.apple.com/ca/app/life-saver-tv/id1470667717" icon={appleSVG} text="Buy on App Store" /> 
+                <IconLink link="https://www.github.com/amiantos/lifesaver" icon={githubSVG} text="View on Github"/>
               </center>
             </AppContent>
           </App>
         </AppContainer>
         <AppContainer>
           <App>
-            <AppPhoto src={lifeSaverShot} />
-            <AppName>Life Saver</AppName>
+            <AppPhoto src={aeonShot} />
+            <AppName>Aeon Garden</AppName>
             <AppContent>
-              <p>Life Saver is an implementation of Conway's Game of Life as an abstract, colorful, highly configurable macOS screensaver that should please designers and nerds alike. </p>
+              <p>Aeon Garden is an abstract artificial life toy for iOS, tvOS, and macOS. A virtual fish tank for all your screens, watch creatures evolve to generative ambient soundscapes.</p>
               <center>
-                <IconLink link="https://www.github.com/amiantos/lifesaver" icon={githubSVG} text="Download on Github"/>
+                <IconLink link="https://www.github.com/amiantos/aeongarden" icon={githubSVG} text="View on Github"/>
               </center>
             </AppContent>
           </App>
