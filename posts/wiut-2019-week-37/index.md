@@ -2,7 +2,7 @@
 title: What I'm Up To - Week 37, 2019
 date: '2019-09-15'
 description: "What I did over the past week: Work on BRGamebookEngine continues, again, always and forever"
-tags: ['programming', 'brgamebookengine']
+tags: ['programming', 'gamebookengine']
 ---
 
 Hello! This is my weekly post where I talk about what I did over the past week. This week was really just a big continuation of work on BRGamebookEngine, yet again, for the fourth week in a row I think.

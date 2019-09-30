@@ -2,7 +2,7 @@
 title: What I'm Up To - Week 36, 2019
 date: '2019-09-08'
 description: "What I did over the past week: BRGamebookEngine, again, still!"
-tags: ['programming', 'brgamebookengine']
+tags: ['programming', 'gamebookengine']
 ---
 
 Hello! This is my weekly post where I talk about what I did over the past week. I'm spending basically literally all of my free time on BRGamebookEngine, so I hope you're prepared for another post about it!
@@ -40,7 +40,7 @@ There are *a lot* of caveats drawing the page map this way, but most of them are
 
 Here's two screenshots, one of a story that looks like the JSON above, and one that is much more complicated. Please note these are unfinished screenshots, and what's inside the boxes is going to be a bit fancier than just some text. You can zoom in really close, and zoom out pretty far, and it's pretty neat all around.
 
-![BRGamebookEngine screenshots, showing branching game overview and main game list screen](brgamebookengine-alpha.jpg "BRGamebookEngine screenshots, showing branching game overview and main game list screen")
+![BRGamebookEngine screenshots, showing branching game overview and main game list screen](gamebookengine-alpha.jpg "BRGamebookEngine screenshots, showing branching game overview and main game list screen")
 
 I've spent a bit of time trying to polish up some of the UI this weekend, well before I really meant to, but I can't help myself. The third screenshot up there is where I'm at so far with the main view of the app, the game list. I decided I wanted "always on screen" functional UI. I'd implemented everything using swipe actions on table rows originally, and it was just really annoying to have to swipe all the time do to anything. I also got a nicer design for the "player" view partially in place. You can see some of it [in a video I posted on Twitter](https://twitter.com/amiantos/status/1170503764001746944) last night.
 

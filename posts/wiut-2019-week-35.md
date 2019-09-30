@@ -2,7 +2,7 @@
 title: What I'm Up To - Week 35, 2019
 date: '2019-09-01'
 description: "What I did over the past week: BRGamebookEngine"
-tags: ['programming', 'brgamebookengine']
+tags: ['programming', 'gamebookengine']
 ---
 
 Hello! This is my weekly post where I talk about what I did over the past week. This week I really just worked on BRGamebookEngine in all of my free time, so... here we go.
@@ -11,17 +11,17 @@ Hello! This is my weekly post where I talk about what I did over the past week. 
 
 ## BRGamebookEngine
 
-I've been feeling really motivated to finish what I'd consider the alpha version of [BRGamebookEngine](https://github.com/amiantos/brgamebookengine), so I basically worked on it obsessively all week long, including most of last Sunday after I wrote [that WIUT post](/wiut-2019-week-35). 
+I've been feeling really motivated to finish what I'd consider the alpha version of [BRGamebookEngine](https://github.com/amiantos/gamebookengine), so I basically worked on it obsessively all week long, including most of last Sunday after I wrote [that WIUT post](/wiut-2019-week-35). 
 
 Looks like last week I hadn't implemented any of the Rules stuff, and talked about how it was kind of daunting. To explain what the Rules feature is, in BRGamebookEngine you can set up attributes, which you can use to track information or changing data over the course of the game. You use them with Decisions, by setting up Rules that determine if the decision should be available by doing a check (or several) on the player's current attribute values.
 
 For example, say you've written some sort of dungeon, and the player needs to pick up a key to progress. You can create an attribute named "has key", and when they've landed on the page where they pick up the key, you can set that attribute to `1`. When they go back to the room with the locked door, you can set up a decision (like "Unlock the door") that will only appear if "has key" is equal to 1. This is just one possible use of the feature, there's many other ways to use it.
 
-So last week I was a little worried about it, but this week I cranked out a working (but rough, code wise) version of it. It works great! [The code to check the rules](https://github.com/amiantos/brgamebookengine/blob/a8ec7d0f52c84f62912954eabf8da3e7701db35e/BRGamebookEngine/Views/Playing/PlayPageViewController.swift#L60) to see if the Decision should display is pretty simple, just not particularly pretty, and it hasn't been refactored or considered past the "well, it works!" stage.
+So last week I was a little worried about it, but this week I cranked out a working (but rough, code wise) version of it. It works great! [The code to check the rules](https://github.com/amiantos/gamebookengine/blob/a8ec7d0f52c84f62912954eabf8da3e7701db35e/BRGamebookEngine/Views/Playing/PlayPageViewController.swift#L60) to see if the Decision should display is pretty simple, just not particularly pretty, and it hasn't been refactored or considered past the "well, it works!" stage.
 
 A part that did prove somewhat tricky was adding the ability to export and import games. I wanted to have them export to JSON, and that was actually pretty easy. I probably didn't do it in the most efficient / "swifty" way, by writing all the serialization myself, but it worked. It spits out [great JSON](https://gist.github.com/amiantos/2e22c0ca71d4d070051de154cb9d22f7) if you ask me. I mean, I'm not happy about the blank rule lists, but I can fix that later! Whatever.
 
-The hard part was importing them back in. I kind of foolishly decided to try to write my own JSON decoding, which quickly turned into a gigantic mess that even SwiftyJSON couldn't help. I thought it would be faster than [doing it the right way](https://learnappmaking.com/codable-json-swift-how-to/), but it turns out... it wasn't. When I implemented the proper solution by building another copy of my data model out of Codable structs, the code to then turn those structs into my CoreData models was [really easy to write](https://github.com/amiantos/brgamebookengine/blob/a8ec7d0f52c84f62912954eabf8da3e7701db35e/BRGamebookEngine/Game%20Storage/CoreDataStore.swift#L65), though I suppose it also looks kind of like a mess, but sometimes life is like that.
+The hard part was importing them back in. I kind of foolishly decided to try to write my own JSON decoding, which quickly turned into a gigantic mess that even SwiftyJSON couldn't help. I thought it would be faster than [doing it the right way](https://learnappmaking.com/codable-json-swift-how-to/), but it turns out... it wasn't. When I implemented the proper solution by building another copy of my data model out of Codable structs, the code to then turn those structs into my CoreData models was [really easy to write](https://github.com/amiantos/gamebookengine/blob/a8ec7d0f52c84f62912954eabf8da3e7701db35e/BRGamebookEngine/Game%20Storage/CoreDataStore.swift#L65), though I suppose it also looks kind of like a mess, but sometimes life is like that.
 
 Everything else I worked on was mostly kind of polish related, adding alerts on deletion, getting the Document Picker stuff to work (you can import a game right from the Files app, and browse your files in the app, and the `.gbook` files it exports have a cute little icon), and experimenting with different UI stuff. Nothing too exciting.
 

@@ -2,7 +2,7 @@
 title: What I'm Up To - Week 33, 2019
 date: '2019-08-18'
 description: "What I did over the past week: Life Saver TV downloads, BRGamebookEngine, and motorcycling!"
-tags: ['programming', 'lifesaver', 'brgamebookengine', 'motorcycle']
+tags: ['programming', 'lifesaver', 'gamebookengine', 'motorcycle']
 ---
 
 Hello! This is my weekly post where I talk about what I did over the past week. You might notice there's been a large gap between week 27 and week 33 without any WIUT posts. No, I didn't die in a fiery motorcycle crash, I just took a bit of a break from programming like I said I was going to, so I didn't end up with very much to write about.

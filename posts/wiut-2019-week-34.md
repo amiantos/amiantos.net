@@ -2,7 +2,7 @@
 title: What I'm Up To - Week 34, 2019
 date: '2019-08-25'
 description: "What I did over the past week: work on BRGamebookEngine continues, and I play some retro FPS games while reliving my childhood"
-tags: ['programming', 'brgamebookengine', 'gaming']
+tags: ['programming', 'gamebookengine', 'gaming']
 ---
 
 Hello! This is my weekly post where I talk about what I did over the past week. This week I mostly focused on working on BRGamebookEngine, made the repo for it public for whatever reason, and played some old school FPS games.
@@ -25,7 +25,7 @@ Like all projects, it was very easy to get a working prototype running, but the 
 
 That said, I am building this so that it can lead to more arty projects for myself, but even if I end up chickening out and never get around to writing my own gamebooks, this will be a fun tool for other people to use to build their own stories if they so choose.
 
-Oh, I'm burying the lede. I made the repo public, though I'm not entirely sure why because it's nowhere near ready for primetime. I guess you can check out what I've done so far, or fork it and finish a better version of it before I can, over at [amiantos/BRGamebookEngine on GitHub](https://github.com/amiantos/brgamebookengine).
+Oh, I'm burying the lede. I made the repo public, though I'm not entirely sure why because it's nowhere near ready for primetime. I guess you can check out what I've done so far, or fork it and finish a better version of it before I can, over at [amiantos/BRGamebookEngine on GitHub](https://github.com/amiantos/gamebookengine).
 
 ---
 
