@@ -8,44 +8,11 @@ import Excerpt from '../components/excerpt'
 import About from '../components/about'
 import Divider from '../components/divider'
 
-import numuShot from '../../images/numu-tracker-shot2.jpg'
-import aeonShot from '../../images/aeon-garden-shot2.jpg'
-import lifeSaverShot from '../../images/lifesaver-shot2.jpg'
-import appleSVG from '../../images/apple-logo.svg'
-import githubSVG from '../../images/github-logo.svg'
-import IconLink from '../components/icon-link';
-
 const ExcerptContainer = styled.div`
   ${ tw`z-40` }
 `
 
-const SectionHeader = styled.div`
-  ${ tw`opacity-75 font-sans font-bold text-center bg-gumbo rounded-full shadow sm:text-lg md:text-xl text-white text-bold p-6 m-2 sm:m-4` }
-`
 
-const AppsContainer = styled.div`
-  ${ tw`text-center` }
-`
-
-const AppContainer = styled.div`
-  ${ tw`md:inline-block align-top text-left md:w-1/2 w-full block` }
-`
-
-const App = styled.div`
-  ${ tw`bg-white rounded shadow overflow-hidden m-4` }
-`
-
-const AppPhoto = styled.img`
-  ${ tw`w-full block mb-0 p-0 pt-2` }
-`
-
-const AppName = styled.div`
-  ${ tw`bg-white text-black font-sans text-lg font-bold mt-0 p-4 border-box border-solid border-0 border-t-8 border-gumbo` }
-`
-
-const AppContent = styled.div`
-  ${ tw`font-sans text-black text-sm leading-loose-ish ml-4 mr-4` };
-`
 
 const IndexPage = props => {
   const postList = props.data.posts
@@ -53,46 +20,6 @@ const IndexPage = props => {
     <>
       <SEO title="home" keywords={[`gatsby`, `application`, `react`]} />
       <About />
-      <AppsContainer>
-        <AppContainer>
-          <App>
-            <AppPhoto src={numuShot} />
-            <AppName>Numu Tracker</AppName>
-            <AppContent>
-              <p>Numu Tracker can keep you up to date on music by the artists you love the most. Part to-do list, part reminders and alerts, Numu gives you the tools to ensure you never miss out on new albums.</p>
-              <center>
-                <IconLink link="https://itunes.apple.com/us/app/numu-new-music-tracker/id1158641228" icon={appleSVG} text="View on App Store" /> 
-                <IconLink link="https://www.github.com/numutracker" icon={githubSVG} text="View on Github" />
-              </center>
-            </AppContent>
-          </App>
-        </AppContainer>
-        <AppContainer>
-          <App>
-            <AppPhoto src={lifeSaverShot} />
-            <AppName>Life Saver</AppName>
-            <AppContent>
-              <p>Life Saver is an implementation of Conway's Game of Life as an abstract, colorful, highly configurable Apple TV app and macOS screensaver that should please designers and nerds alike. </p>
-              <center>
-                <IconLink link="https://apps.apple.com/ca/app/life-saver-tv/id1470667717" icon={appleSVG} text="Buy on App Store" /> 
-                <IconLink link="https://www.github.com/amiantos/lifesaver" icon={githubSVG} text="View on Github"/>
-              </center>
-            </AppContent>
-          </App>
-        </AppContainer>
-        <AppContainer>
-          <App>
-            <AppPhoto src={aeonShot} />
-            <AppName>Aeon Garden</AppName>
-            <AppContent>
-              <p>Aeon Garden is an abstract artificial life toy for iOS, tvOS, and macOS. A virtual fish tank for all your screens, watch creatures evolve to generative ambient soundscapes.</p>
-              <center>
-                <IconLink link="https://www.github.com/amiantos/aeongarden" icon={githubSVG} text="View on Github"/>
-              </center>
-            </AppContent>
-          </App>
-        </AppContainer>
-      </AppsContainer>
       <Divider />
       <ExcerptContainer>
         {postList.edges.map(({ node }, i) => (

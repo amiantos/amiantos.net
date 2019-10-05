@@ -22,7 +22,7 @@ const NotFoundPage = props => {
           <Content>
             <p>Gamebook Engine is currently in beta.</p>
             <h2>Privacy Policy</h2>
-            <p>Gamebook Engine does not collect any information about you or your usage of the app. No information is ever transmitted from your instance of Gamebook Engine to any server on the internet. If you share Gamebooks using the export function, that is entirely separate from Gamebook Engine and who you share them with is up to you and out of our control.</p>
+            <p>Gamebook Engine does not collect any information about you or your usage of the app, beyond anonymous statistics that you allow to be sent to Apple via a setting on your device. Any content you create with Gamebook Engine is entirely your property and does not belong to Gamebook Engine or its creators in any way. If you share Gamebooks using the export function, who you share them with is your responsibility.</p>
           </Content>
         </Post>
       </PostContainer>

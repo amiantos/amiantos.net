@@ -14,6 +14,7 @@ const StyledSVG = styled.svg`
 
 const OffsetText = styled.span`
   position:relative;
+  margin-left:3px;
   top:-4px;
 `
 
