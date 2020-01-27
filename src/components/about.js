@@ -84,19 +84,6 @@ export default () => {
       <AppsContainer>
       <AppContainer>
         <App>
-          <AppPhoto src={numuShot} />
-          <AppName>Numu Tracker</AppName>
-          <AppContent>
-            <p>Numu Tracker can keep you up to date on music by the artists you love the most. Part to-do list, part reminders and alerts, Numu gives you the tools to ensure you never miss out on new albums.</p>
-            <center>
-              <IconLink link="https://itunes.apple.com/us/app/numu-new-music-tracker/id1158641228" icon={appleSVG} text="View on App Store" /> 
-              <IconLink link="https://www.github.com/numutracker" icon={githubSVG} text="View on Github" />
-            </center>
-          </AppContent>
-        </App>
-      </AppContainer>
-      <AppContainer>
-        <App>
           <AppPhoto src={lifeSaverShot} />
           <AppName>Life Saver</AppName>
           <AppContent>
