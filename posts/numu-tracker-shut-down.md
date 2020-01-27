@@ -47,6 +47,10 @@ App development is hard work, especially on iOS. iOS is growing more complicated
 
 It can also be unrewarding: I had to sit by and watch worse apps get "Featured" in the App Store, on Product Hunt, or show up on Apple blogs, because they somehow knew the right connections to make or had other advantages. I think Apple never "Featured" Numu on the App Store because it promoted services other than Apple Music (similar apps that *only* work with Apple Music have been featured, and they were much worse than Numu).
 
+What did I do right? I built an app I wanted for myself, and I built it so that it would do the job I needed it to do. I had faith that there were other users out there like me, who would want the same kind of app that I wanted, and that faith bore out. It was very gratifying to receive feedback from users who appreciated the "to-do list" aspect of app, considering I had several friends tell me that they didn't understand who that was for. It was for me! Luckily, it was for some other people out there too who took music listening as seriously as I did.
+
+In short: If you build an app, build something you want and need. It will inspire you to struggle through the hard times, and it'll feel extremely satisfying when you learn that you're not alone in the world, other people have the same needs.
+
 ## What's next?
 
 So what's next for me? I don't know exactly just yet. I think I am going to try to focus on a bigger project that I can charge money for right out the gate, some sort of game. I've got a solid idea, but I'm not ready to talk about it just yet.
