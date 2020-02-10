@@ -1,5 +1,5 @@
 ---
-title: What I'm Up To - Week 52, 2019
+title: What I'm Up To - Week 51, 2019
 date: '2019-12-24'
 description: "What I did over the past (several) weeks: I've played a ton of video games, and read books."
 tags: ['games', 'books']
