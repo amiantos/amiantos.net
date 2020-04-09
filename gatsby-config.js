@@ -92,6 +92,13 @@ module.exports = {
         plugins: [
           `gatsby-remark-responsive-iframe`,
           {
+            resolve: `gatsby-remark-embed-gist`,
+            options: {
+              username: `amiantos`,
+              includeDefaultCss: true
+            }
+          },
+          {
             resolve: `gatsby-remark-prismjs`,
             options: {
               classPrefix: `language-`,
