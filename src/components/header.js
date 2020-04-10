@@ -4,10 +4,18 @@ import React from "react";
 import styled from "styled-components";
 import tw from "tailwind.macro";
 
+const TitleContainer = styled.div`
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 800px;
+  overflow-x: hidden;
+`;
+
 const Title = styled.header`
   text-align: center;
+  width: 100%;
   height: 0px;
-  overflow: show;
   z-index: -2;
 `;
 
@@ -18,9 +26,11 @@ const Text = styled.div`
 `;
 
 const Header = ({ siteTitle }) => (
-  <Title>
-    <Text>{siteTitle}</Text>
-  </Title>
+  <TitleContainer>
+    <Title>
+      <Text>{siteTitle}</Text>
+    </Title>
+  </TitleContainer>
 );
 
 Header.propTypes = {
