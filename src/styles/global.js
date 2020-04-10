@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
   *, *:before, *:after {
@@ -19,10 +19,11 @@ const GlobalStyle = createGlobalStyle`
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color:#f5f5f5;
+    background-color:#202040;
   }
   a {
-    color: #3C484D;
+    color: #b030b0;
+    font-weight:bold;
   }
   p {
     margin-top:0;
@@ -30,14 +31,14 @@ const GlobalStyle = createGlobalStyle`
   }
   hr {
     border:0;
-    border-top:1px solid #ddd;
+    border-top:1px solid #602080;
     margin:30px;
   }
   h1, h2, h3, h4 {
     margin-top:0;
   }
   blockquote {
-    border-left:2px solid #ddd;
+    border-left:2px solid #602080;
     padding-left:10px;
     font-style:italic;
     margin-left:10px;
@@ -45,6 +46,6 @@ const GlobalStyle = createGlobalStyle`
   ul, ol {
     padding-left:20px;
   }
-`
+`;
 
-export default GlobalStyle
+export default GlobalStyle;

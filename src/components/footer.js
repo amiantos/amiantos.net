@@ -1,10 +1,11 @@
-import React from 'react'
-import styled from 'styled-components'
-import tw from 'tailwind.macro'
+import React from "react";
+import styled from "styled-components";
+import tw from "tailwind.macro";
 
 const Footer = styled.footer`
-  ${ tw`p-16 font-sans text-xs text-center` }
-`
+  ${tw`p-16 font-sans text-xs text-center`}
+  color:#aaa;
+`;
 
 export default () => {
   return (
@@ -15,5 +16,5 @@ export default () => {
       {` `}
       <a href="https://www.gatsbyjs.org">Gatsby</a>
     </Footer>
-  )
-}
+  );
+};

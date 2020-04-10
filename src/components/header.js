@@ -1,35 +1,34 @@
-import { Link } from 'gatsby'
-import PropTypes from 'prop-types'
-import React from 'react'
-import styled from 'styled-components'
-import tw from 'tailwind.macro'
+import { Link } from "gatsby";
+import PropTypes from "prop-types";
+import React from "react";
+import styled from "styled-components";
+import tw from "tailwind.macro";
 
 const Title = styled.header`
-  ${ tw`flex items-center w-full mt-5 mb-1 md:mt-10 md:mb-5` }
-`
-
-const StyledLink = styled(Link)`
-  ${ tw`relative flex-none mx-auto no-underline` }
-`
+  text-align: center;
+  height: 0px;
+  overflow: show;
+  z-index: -2;
+`;
 
 const Text = styled.div`
-  ${ tw`font-title font-bold text-3xl sm:text-4xl md:text-5xl text-black-darkest` }
-`
+  ${tw`font-sans font-bold`}
+  color: #202060;
+  font-size: 180px;
+`;
 
 const Header = ({ siteTitle }) => (
   <Title>
-    <StyledLink to="/">
-      <Text>{siteTitle}</Text>
-    </StyledLink>
+    <Text>{siteTitle}</Text>
   </Title>
-)
+);
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
-}
+};
 
 Header.defaultProps = {
   siteTitle: ``,
-}
+};
 
-export default Header
+export default Header;

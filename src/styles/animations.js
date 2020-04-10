@@ -1,10 +1,10 @@
-import styled, { keyframes, css } from 'styled-components'
+import styled, { keyframes, css } from "styled-components";
 
 const rotate = keyframes`
   100% {
     transform: rotate(360deg);
   }
-`
+`;
 
 const upDown = keyframes`
   from {
@@ -13,7 +13,7 @@ const upDown = keyframes`
   to {
     transform: translateY(30px);
   }
-`
+`;
 
 const downUp = keyframes`
   from {
@@ -22,7 +22,7 @@ const downUp = keyframes`
   to {
     transform: translateY(-30px);
   }
-`
+`;
 
 const leftRight = keyframes`
   from {
@@ -31,7 +31,7 @@ const leftRight = keyframes`
   to {
     transform: translateX(30px);
   }
-`
+`;
 
 const rightLeft = keyframes`
   from {
@@ -40,7 +40,7 @@ const rightLeft = keyframes`
   to {
     transform: translateX(-30px);
   }
-`
+`;
 
 const orbit = keyframes`
   from {
@@ -49,52 +49,52 @@ const orbit = keyframes`
   to {
     transform: rotate(360deg) translateX(60px) rotate(-360deg);
   }
-`
+`;
 
 const rotateSlowAnimation = css`
-  ${ rotate } 30s linear infinite;
-`
+  ${rotate} 30s linear infinite;
+`;
 
 const upDownAnimation = css`
-  ${ upDown } 12s ease-in-out infinite alternate;
-`
+  ${upDown} 12s ease-in-out infinite alternate;
+`;
 
 const downUpAnimation = css`
-  ${ downUp } 12s ease-in-out infinite alternate;
-`
+  ${downUp} 12s ease-in-out infinite alternate;
+`;
 
 const leftRightAnimation = css`
-  ${ leftRight } 12s ease-in-out infinite alternate;
-`
+  ${leftRight} 12s ease-in-out infinite alternate;
+`;
 
 const rightLeftAnimation = css`
-  ${ rightLeft } 12s ease-in-out infinite alternate;
-`
+  ${rightLeft} 12s ease-in-out infinite alternate;
+`;
 
 const orbitAnimation = css`
-  ${ orbit } 60s linear infinite;
-`
+  ${orbit} 60s linear infinite;
+`;
 
 export const RotateSlow = styled.div`
-  animation: ${ rotateSlowAnimation };
-`
+  animation: ${rotateSlowAnimation};
+`;
 
 export const Orbit = styled.div`
-  animation: ${ orbitAnimation };
-`
+  animation: ${orbitAnimation};
+`;
 
 export const UpDown = styled.div`
-  animation: ${ upDownAnimation };
-`
+  animation: ${upDownAnimation};
+`;
 
 export const DownUp = styled.div`
-  animation: ${ downUpAnimation };
-`
+  animation: ${downUpAnimation};
+`;
 
 export const LeftRight = styled.div`
-  animation: ${ leftRightAnimation };
-`
+  animation: ${leftRightAnimation};
+`;
 
 export const RightLeft = styled.div`
-  animation: ${ rightLeftAnimation };
-`
+  animation: ${rightLeftAnimation};
+`;

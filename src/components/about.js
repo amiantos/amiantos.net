@@ -1,87 +1,106 @@
-import React from 'react'
-import styled from 'styled-components'
-import tw from 'tailwind.macro'
-import { PostContainer } from '../styles/post'
+import React from "react";
+import styled from "styled-components";
+import tw from "tailwind.macro";
+import { PostContainer } from "../styles/post";
 
-import bradProfile from '../../images/brad-profile.jpg'
-import numuShot from '../../images/numu-tracker-shot2.jpg'
-import aeonShot from '../../images/aeon-garden-shot2.jpg'
-import lifeSaverShot from '../../images/lifesaver-shot2.jpg'
-import gamebookEngineShot from '../../images/gamebook-engine-shots.jpg'
-import appleSVG from '../../images/apple-logo.svg'
-import githubSVG from '../../images/github-logo.svg'
-import IconLink from '../components/icon-link';
+import bradProfile from "../../images/brad-profile.jpg";
+import bradBitmoji from "../../images/bitmoji.png";
+import numuShot from "../../images/numu-tracker-shot2.jpg";
+import aeonShot from "../../images/aeon-garden-shot2.jpg";
+import lifeSaverShot from "../../images/lifesaver-shot2.jpg";
+import gamebookEngineShot from "../../images/gamebook-engine-shots.jpg";
+import appleSVG from "../../images/apple-logo.svg";
+import githubSVG from "../../images/github-logo.svg";
+import IconLink from "../components/icon-link";
 
 const About = styled.div`
-  ${ tw`relative bg-white rounded shadow overflow-hidden mx-auto clearfix p-5 pb-1 md:p-8 md:pb-2` }
-`
+  ${tw`relative overflow-hidden mx-auto clearfix p-5 pb-1 md:p-8 md:pb-2`}
+`;
 
 const AboutTitle = styled.div`
-  ${ tw`font-sans bg-white text-lg font-bold text-black-monokai sm:text-xl md:text-2xl` }
-`
+  ${tw`font-sans text-lg font-bold sm:text-xl md:text-2xl`}
+  color:#eee;
+`;
 
 const AboutContent = styled.div`
-  ${ tw`font-sans text-black text-sm leading-loose-ish md:text-base pt-3 md:pt-5` };
-`
+  ${tw`font-sans text-sm leading-loose-ish md:text-base pt-3 md:pt-5`};
+  color: #eee;
+`;
 
 const ProfilePhoto = styled.img`
-  ${ tw`relative w-1/3 max-w-xs md:w-1/4 rounded-full shadow-lg float-right clearfix border-solid border-8 border-gumbo ml-3 mb-4 mt-4` }
-`
+  ${tw`relative w-1/3 max-w-xs md:w-1/4 float-right clearfix border-solid border-8 border-t-0 border-l-0 ml-3 mb-4 mt-4`}
+  border-color:#602080;
+`;
 
 const PatreonButton = styled.a`
-  ${ tw`font-sans font-smallcaps shadow-md font-bold inline-block rounded-lg bg-black text-center mt-6 no-underline p-4 pl-6 pr-6 text-white text-lg md:text-xl`}
-`
+  ${tw`font-sans font-smallcaps shadow-md font-bold inline-block rounded-lg bg-black text-center mt-6 no-underline p-4 pl-6 pr-6 text-white text-lg md:text-xl`}
+`;
 
 const SectionHeader = styled.div`
-  ${ tw`opacity-75 font-sans font-bold text-center bg-gumbo rounded-full shadow sm:text-lg md:text-xl text-white text-bold p-6 m-2 sm:m-4` }
-`
+  ${tw`opacity-75 font-sans font-bold text-center bg-gumbo rounded-full shadow sm:text-lg md:text-xl text-white text-bold p-6 m-2 sm:m-4`}
+`;
 
 const AppsContainer = styled.div`
-  ${ tw`text-center` }
-`
+  ${tw`text-center`}
+`;
 
 const AppContainer = styled.div`
-  ${ tw`md:inline-block align-top text-left md:w-1/2 w-full block` }
-`
+  ${tw`md:inline-block align-top text-left md:w-1/2 w-full block`}
+`;
 
 const App = styled.div`
-  ${ tw`bg-white rounded shadow overflow-hidden m-4` }
-`
+  ${tw`bg-white rounded shadow overflow-hidden m-4`}
+`;
 
 const AppPhoto = styled.img`
-  ${ tw`w-full block mb-0 p-0 pt-2` }
-`
+  ${tw`w-full block mb-0 p-0 pt-2`}
+`;
 
 const AppName = styled.div`
-  ${ tw`bg-white text-black font-sans text-lg font-bold mt-0 p-4 border-box border-solid border-0 border-t-8 border-gumbo` }
-`
+  ${tw`bg-white text-black font-sans text-lg font-bold mt-0 p-4 border-box border-solid border-0 border-t-8 border-gumbo`}
+`;
 
 const AppContent = styled.div`
-  ${ tw`font-sans text-black text-sm leading-loose-ish ml-4 mr-4` };
-`
+  ${tw`font-sans text-black text-sm leading-loose-ish ml-4 mr-4`};
+`;
 
 export default () => {
   return (
     <>
       <PostContainer>
         <About>
-          <AboutTitle>Well hello there!</AboutTitle>
-          <ProfilePhoto src={bradProfile} title="Brad Root's most professional selfie" />
+          <AboutTitle>Howdy!</AboutTitle>
+          <ProfilePhoto
+            src={bradBitmoji}
+            title="I belong to the blank generation, I can take it or leave it each time"
+          />
           <AboutContent>
-            <p>My name is Brad Root and I'm a software engineer, music aficionado, and occasional unicyclist.</p>
-            
-            <p>In my spare time, I build <a href="https://github.com/amiantos">open source software</a>, and write about my experiences as a programmer here on this blog.</p>
-            
-            <p>You can also find me on <a href="https://www.twitter.com/amiantos">Twitter</a>, <a href="https://github.com/amiantos">GitHub</a>, and <a href="https://www.linkedin.com/in/amiantos/">LinkedIn</a>.</p>
+            <p>
+              My name is <b>Brad Root</b> and I'm a software engineer, music
+              aficionado, video game junkie, and occasional unicyclist.
+            </p>
 
-            <p>If you enjoy the apps I build or articles I write, please consider supporting me <a href="https://www.patreon.com/amiantos">by becoming a patron</a>.</p>
+            <p>
+              In my spare time, I build{" "}
+              <a href="https://github.com/amiantos">open source software</a>,
+              and write about my experiences as a programmer here on this blog.
+            </p>
+
+            <p>
+              You can also find me on{" "}
+              <a href="https://www.twitter.com/amiantos">Twitter</a>,{" "}
+              <a href="https://github.com/amiantos">GitHub</a>, and{" "}
+              <a href="https://www.linkedin.com/in/amiantos/">LinkedIn</a>.
+            </p>
           </AboutContent>
         </About>
-        <center>
-          <PatreonButton href="https://www.patreon.com/amiantos">Support these projects by becoming a Patron</PatreonButton>
-        </center>
+        {/* <center>
+          <PatreonButton href="https://www.patreon.com/amiantos">
+            Support these projects by becoming a Patron
+          </PatreonButton>
+        </center> */}
       </PostContainer>
-      <AppsContainer>
+      {/* <AppsContainer>
       <AppContainer>
         <App>
           <AppPhoto src={lifeSaverShot} />
@@ -120,7 +139,7 @@ export default () => {
           </AppContent>
         </App>
       </AppContainer>
-    </AppsContainer>
-  </>
-  )
-}
+    </AppsContainer> */}
+    </>
+  );
+};

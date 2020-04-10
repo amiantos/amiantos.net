@@ -1,5 +1,5 @@
-import React from 'react'
-import { graphql } from 'gatsby'
+import React from "react";
+import { graphql } from "gatsby";
 import {
   PostContainer,
   Post,
@@ -8,31 +8,35 @@ import {
   Image,
   DateLink,
   Meta,
-  TagLink
-} from '../styles/post'
-import SEO from '../components/seo'
-import About from '../components/about'
-import kebabCase from 'lodash/kebabCase'
-import Divider from '../components/divider'
+  TagLink,
+} from "../styles/post";
+import SEO from "../components/seo";
+import About from "../components/about";
+import kebabCase from "lodash/kebabCase";
+import Divider from "../components/divider";
 
 export default ({ data }) => {
-  const post = data.markdownRemark
+  const post = data.markdownRemark;
   return (
     <>
-      <SEO title={post.frontmatter.title} keywords={post.frontmatter.tags} description={post.frontmatter.description || post.excerpt}/>
+      <SEO
+        title={post.frontmatter.title}
+        keywords={post.frontmatter.tags}
+        description={post.frontmatter.description || post.excerpt}
+      />
+      <About />
+      <Divider />
       <PostContainer>
         <Post>
-          <DateLink to={post.fields.slug}>
-            {post.frontmatter.date}
-          </DateLink>
+          <DateLink to={post.fields.slug}>{post.frontmatter.date}</DateLink>
           <Title to={post.fields.slug}>{post.frontmatter.title}</Title>
           <Meta>
-            { post.frontmatter.tags.map((tag, index) => {
+            {post.frontmatter.tags.map((tag, index) => {
               return (
-                <TagLink key={index} to={`/tags/${ kebabCase(tag) }/`}>
+                <TagLink key={index} to={`/tags/${kebabCase(tag)}/`}>
                   {tag}
                 </TagLink>
-              )
+              );
             })}
           </Meta>
           <Content>
@@ -45,11 +49,9 @@ export default ({ data }) => {
           </Content>
         </Post>
       </PostContainer>
-      <Divider />
-      <About />
     </>
-  )
-}
+  );
+};
 
 export const query = graphql`
   query($slug: String!) {
@@ -67,4 +69,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;

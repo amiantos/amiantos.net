@@ -4,16 +4,16 @@ module.exports = {
     author: `Brad Root`,
     description: `Sometimes I'll write about programming here and post photos.`,
     homeCity: `Los Angeles`,
-    siteUrl: `https://amiantos.net`
+    siteUrl: `https://amiantos.net`,
   },
   plugins: [
     {
-      resolve: 'gatsby-plugin-web-font-loader',
+      resolve: "gatsby-plugin-web-font-loader",
       options: {
         google: {
-          families: ['Vollkorn: 400,700']
-        }
-      }
+          families: ["Vollkorn: 400,700"],
+        },
+      },
     },
     {
       resolve: `gatsby-plugin-feed`,
@@ -33,14 +33,14 @@ module.exports = {
         feeds: [
           {
             serialize: ({ query: { site, allMarkdownRemark } }) => {
-              return allMarkdownRemark.edges.map(edge => {
+              return allMarkdownRemark.edges.map((edge) => {
                 return Object.assign({}, edge.node.frontmatter, {
                   description: edge.node.excerpt,
                   date: edge.node.frontmatter.date,
                   url: site.siteMetadata.siteUrl + edge.node.fields.slug,
                   guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
-                })
-              })
+                });
+              });
             },
             query: `
               {
@@ -76,14 +76,14 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${ __dirname }/images`,
+        path: `${__dirname}/images`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `posts`,
-        path: `${ __dirname }/posts`,
+        path: `${__dirname}/posts`,
       },
     },
     {
@@ -95,8 +95,8 @@ module.exports = {
             resolve: `gatsby-remark-embed-gist`,
             options: {
               username: `amiantos`,
-              includeDefaultCss: true
-            }
+              includeDefaultCss: true,
+            },
           },
           {
             resolve: `gatsby-remark-prismjs`,
@@ -117,7 +117,7 @@ module.exports = {
             },
           },
         ],
-      }
+      },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
@@ -136,17 +136,17 @@ module.exports = {
     {
       resolve: `gatsby-plugin-favicon`,
       options: {
-        logo: `./images/amiantos-logo.png`
-      }
+        logo: `./images/amiantos-logo.png`,
+      },
     },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: 'UA-256503-23'
+        trackingId: "UA-256503-23",
       },
     },
     `gatsby-plugin-remove-serviceworker`,
     `gatsby-plugin-catch-links`,
-    `gatsby-plugin-twitter`
+    `gatsby-plugin-twitter`,
   ],
-}
+};

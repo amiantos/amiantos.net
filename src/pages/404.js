@@ -1,14 +1,14 @@
-import React from 'react'
-import SEO from '../components/seo'
-import { PostContainer, Post, Title, Content } from '../styles/post'
-import styled from 'styled-components'
-import tw from 'tailwind.macro'
+import React from "react";
+import SEO from "../components/seo";
+import { PostContainer, Post, Title, Content } from "../styles/post";
+import styled from "styled-components";
+import tw from "tailwind.macro";
 
 const NotFoundContainer = styled(PostContainer)`
-  ${ tw`w-3/4 mx-auto` }
-`
+  ${tw`w-3/4 mx-auto`}
+`;
 
-const NotFoundPage = props => {
+const NotFoundPage = (props) => {
   return (
     <>
       <SEO title="404 Not Found" keywords={[`404`, `error`]} />
@@ -22,7 +22,7 @@ const NotFoundPage = props => {
         </Post>
       </NotFoundContainer>
     </>
-  )
-}
+  );
+};
 
-export default NotFoundPage
+export default NotFoundPage;

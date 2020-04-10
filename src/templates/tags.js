@@ -1,41 +1,45 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { graphql } from 'gatsby'
-import SEO from '../components/seo'
-import Excerpt from '../components/excerpt'
-import styled from 'styled-components'
-import tw from 'tailwind.macro'
-import About from '../components/about'
-import Divider from '../components/divider'
+import React from "react";
+import PropTypes from "prop-types";
+import { graphql } from "gatsby";
+import SEO from "../components/seo";
+import Excerpt from "../components/excerpt";
+import styled from "styled-components";
+import tw from "tailwind.macro";
+import About from "../components/about";
+import Divider from "../components/divider";
 
 const TagHeader = styled.div`
-  ${ tw`opacity-75 font-sans text-center bg-gumbo rounded-full shadow sm:text-lg md:text-xl text-white text-bold p-6 m-2 sm:m-4` }
-`
+  ${tw`font-sans text-center text-xl md:text-2xl rounded-full text-bold p-3 m-10 mt-5 mb-5`}
+  color:#eee;
+  background-color: #602080;
+`;
 const ExcerptContainer = styled.div`
-  ${ tw`z-40` }
-`
+  ${tw`z-40`}
+`;
 
 const Tags = ({ pageContext, data }) => {
-  const { tag } = pageContext
-  const { edges, totalCount } = data.allMarkdownRemark
-  const tagHeader = `${ totalCount } post${
-    totalCount === 1 ? '' : 's'
-  } tagged with '${ tag }'`
+  const { tag } = pageContext;
+  const { edges, totalCount } = data.allMarkdownRemark;
+  const tagHeader = `${totalCount} post${
+    totalCount === 1 ? "" : "s"
+  } tagged with '${tag}'`;
 
   return (
     <>
-      <SEO title={ `posts tagged '` + tag + `'` }  keywords={[`gatsby`, `application`, `react`]} />
+      <SEO
+        title={`posts tagged '` + tag + `'`}
+        keywords={[`gatsby`, `application`, `react`]}
+      />
+      <About />
       <TagHeader>{tagHeader}</TagHeader>
       <ExcerptContainer>
         {edges.map(({ node }, i) => (
           <Excerpt data={node} i={i} key={i} />
         ))}
       </ExcerptContainer>
-      <Divider />
-      <About />
     </>
-  )
-}
+  );
+};
 
 Tags.propTypes = {
   pageContext: PropTypes.shape({
@@ -58,9 +62,9 @@ Tags.propTypes = {
       ),
     }),
   }),
-}
+};
 
-export default Tags
+export default Tags;
 
 export const pageQuery = graphql`
   query($tag: String) {
@@ -85,4 +89,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;
