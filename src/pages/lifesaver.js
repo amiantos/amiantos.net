@@ -51,7 +51,7 @@ const NotFoundPage = (props) => {
               <center>
                 👉{" "}
                 <a href="https://apps.apple.com/us/app/life-saver-tv/id1470667717?ls=1">
-                  Buy Life Saver TV for Apple TV
+                  Get Life Saver TV for Apple TV
                 </a>
               </center>
             </h3>
@@ -87,9 +87,7 @@ const NotFoundPage = (props) => {
               <a href="https://www.patreon.com/amiantos">
                 becoming a patron on Patreon
               </a>
-              . If you haven't already paid for Life Saver TV, a patron may
-              request a promo code to get a free copy (if there are any
-              available).
+              .
             </p>
             <h2>Further Reading</h2>
             <p>
