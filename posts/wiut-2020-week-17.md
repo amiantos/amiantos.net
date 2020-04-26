@@ -1,7 +1,7 @@
 ---
-title: What I'm Up To - Week 16, 2020
-date: "2020-04-19"
-description: "What I did over the past week: I started a new micro-project! And... that's about it."
+title: What I'm Up To - Week 17, 2020
+date: "2020-04-26"
+description: "What I did over the past week: I finished and released Last Statement"
 tags: ["programming", "last-statement"]
 ---
 
