@@ -9,23 +9,21 @@ const Menu = styled.ul`
 `;
 
 const MenuItem = styled.li`
-  ${tw`flex-shrink`}
+  ${tw`flex-shrink rounded-full p-1 md:p-2 justify-center`}
+  border:4px solid #202040;
+  line-height: 0.7em;
+  text-align: center;
+  &:hover {
+    border: 4px solid #602080;
+  }
 `;
 
 const MenuLink = styled(Link)`
-  ${tw`font-sans no-underline rounded-full text-xxs sm:text-xs md:text-base p-1 md:p-2 whitespace-no-wrap`}
-  border:4px solid #202040;
-  &:hover {
-    border: 4px solid #602080;
-  }
+  ${tw`font-sans no-underline rounded-full text-xxs sm:text-xs md:text-base`}
 `;
 
 const MenuExternalLink = styled.a`
-  ${tw`font-sans no-underline rounded-full text-xxs sm:text-xs md:text-base p-1 md:p-2 whitespace-no-wrap`}
-  border:4px solid #202040;
-  &:hover {
-    border: 4px solid #602080;
-  }
+  ${tw`font-sans no-underline rounded-full text-xxs sm:text-xs md:text-base`}
 `;
 
 export default () => {
@@ -37,6 +35,9 @@ export default () => {
         </MenuItem>
         <MenuItem>
           <MenuLink to="/lifesaver">Life Saver</MenuLink>
+        </MenuItem>
+        <MenuItem>
+          <MenuLink to="/last-statement">Last Statement</MenuLink>
         </MenuItem>
         <MenuItem>
           <MenuExternalLink href="https://aeongarden.dev">
