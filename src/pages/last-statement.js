@@ -40,7 +40,7 @@ const NotFoundPage = (props) => {
               <center>
                 👉{" "}
                 <a href="https://s3.amazonaws.com/amiantos/last-statement-1.0.zip">
-                  Download Last Statement 1.0 for macOS
+                  Download Last Statement 1.0 for macOS 10.13+
                 </a>
               </center>
             </h3>
