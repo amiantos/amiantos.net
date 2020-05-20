@@ -34,6 +34,11 @@ export default () => {
           <MenuLink to="/">Home</MenuLink>
         </MenuItem>
         <MenuItem>
+          <MenuExternalLink href="https://github.com/amiantos/pibar">
+            PiBar
+          </MenuExternalLink>
+        </MenuItem>
+        <MenuItem>
           <MenuLink to="/lifesaver">Life Saver</MenuLink>
         </MenuItem>
         <MenuItem>
