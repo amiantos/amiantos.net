@@ -21,13 +21,15 @@ If there's room in the cart (because pico-8 cartridges only allow a limited amou
 
 What's the actual goal of the game? I figure you'll be given an assignment at the beginning of the game, like "transport this item to this planet", and the planet will be very far away. It's up to you to get the item there, or maybe hawk it somewhere and do your own thing. In general, it should be fun to just fly around the galaxy, trying to get better gear and destroy bigger and badder pirates.
 
-I started the game by downloading this [A Pico-8 Spaceshooter in 16 GIFs](https://www.lexaloffle.com/bbs/?tid=3948) project, since I figured the SHMUP part of this project was the most important thing to try to accomplish first. I didn't really need to follow the tutorial, I just grabbed the finished product and built my own SHMUP piece by piece, copying and pasting bits of code from it and adapting it as I went along.
+I started development by downloading this [A Pico-8 Spaceshooter in 16 GIFs](https://www.lexaloffle.com/bbs/?tid=3948) project, since I figured the SHMUP part of this project was the most important thing to try to accomplish first. I didn't really need to follow the tutorial, I just grabbed the finished product and built my own SHMUP piece by piece, copying and pasting bits of code from it and adapting it as I went along. I built it within the bones of [this project template](https://gist.github.com/amiantos/b41614c7156927a487f753fd2e0011f3) I ended up with last week, to handle switching between game modes easily.
 
 It's nowhere near finished, but here's a little GIF of this mode in action. There's _a lot_ more work to be done.
 
 ![Space Game SHMUP Mode](space_game_shmup_mode.gif "Space Game SHMUP Mode")
 
-Yesterday, I started to get bored working on the SHMUP mode, and decided to move onto the overworld. To learn how camera movement works I ended up using a cartridge I just happened to see shared on the pico-8 Discord called [An RPG Movement Template](https://gist.github.com/amiantos/f314878361e9cbe86a02da584c315cc1) and basically followed it similarly to the other file for the SHMUP. This one was much simpler though, as I really just needed to construct a 1024x1024 map and then have the camera follow a 'dot' that is your ship in the overworld.
+Yesterday, I started to get bored working on the SHMUP mode, and decided to move onto the overworld. To learn how camera movement works I ended up using a cartridge I just happened to see shared on [the pico-8 Discord](https://discord.gg/pTUhf5tqcF) called [An RPG Movement Template](https://gist.github.com/amiantos/f314878361e9cbe86a02da584c315cc1) and basically followed it similarly to the other file for the SHMUP. This one was much simpler though, as I really just needed to construct a 1024x1024 map and then have the camera follow a 'dot' that is your ship in the overworld.
+
+(As a quick aside: [the pico-8 Discord](https://discord.gg/pTUhf5tqcF) community is super great. Very nice people, very encouraging, helpful, and inclusive. It seems like a really great community. People are generous with their feedback and thoughts, and always in a nice way. Can't beat that...)
 
 After I got the camera moving, I tackled getting the background stars to parallax, which was a bit more complicated than in the SHMUP mode. In the SHMUP mode the camera itself doesn't move, the stars move relative to the ship. In this, the entire background moves and the stars need to 'resist' moving with the camera to some extent. It took a lot of experimentation but I got it into a good place.
 
