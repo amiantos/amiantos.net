@@ -5,11 +5,11 @@ description: "Details of my experience with someone trying very hard to commit u
 tags: ["professional"]
 ---
 
-A couple of years ago, at another job, I hired this guy for a data entry position. He seemed like a decently smart guy who could type fairly quickly, even if maybe he was a bit of a bro. He was at the company for well over a year, I'm pretty sure, but my memory is pretty shoddy. He'd earned "Employee of the Month" twice in one year, which was something we debated about and wasn't just random pick!
+A couple of years ago, at another job, I hired this guy for a data entry position. He seemed like a decently smart guy who could type fairly quickly, even if maybe he was a bit of a bro. He was at the company for well over a year, I'm pretty sure, but my memory is pretty shoddy. He'd earned "Employee of the Month" twice in one year, which was something we debated about and wasn't just a random pick!
 
-Then one morning, he didn't show up to work. No call, no email, nothing. The next day, he still wasn't there. I'm pretty sure it was this day, or the next, I called his emergency contact: his girlfriend; just to make sure he was okay! I wasn't trying to be noisy up-your-ass manager or anything, it was unusual for him to just no show... plus we need to know if we need to hire someone else...
+Then one morning, he didn't show up to work. No call, no email, nothing. The next day, he still wasn't there. I'm pretty sure it was this day, or the next, I called his emergency contact: his girlfriend; just to make sure he was okay! I wasn't trying to be a nosey up-your-ass manager or anything, it was unusual for him to just no show... plus we needed to know if we needed to hire someone else...
 
-His girlfriend answered the phone. I explained that I was Brad, over at your boyfriend's job, and we hadn't heard from him in two or three days and we're just checking in to make sure he's okay? She said, "Uhh, hold on a second," and hung up the phone. When I called her back (maybe we'd gotten disconnected?) it went to voicemail.
+His girlfriend answered the phone. I told her who I was, over at her boyfriend's job, and that we hadn't heard from him in two or three days and we're just checking in to make sure he's okay? She said, "Uhh, hold on a second," and hung up the phone. When I called her back (maybe we'd gotten disconnected?) it went to voicemail.
 
 At this point it seemed pretty clear that he wasn't going to come back to work, so we set about looking for his replacement. Pretty lame that he did that, but who knows why people do the things they do? A week or two later, the company got the paperwork from the unemployment office for him. He's trying to get money from the EDD!
 
