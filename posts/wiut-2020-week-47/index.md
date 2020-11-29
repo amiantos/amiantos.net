@@ -2,7 +2,7 @@
 title: What I’m Up To - Week 47, 2020
 date: "2020-11-22"
 description: "What I did over the past week: Work begins on my first Pico-8 cart!"
-tags: ["programming","pico-8","space game"]
+tags: ["programming","pico-8","space game","back of beyond"]
 ---
 
 Howdy! This is my weekly post where I write about whatever programming-related stuff I got up to in the past week.
