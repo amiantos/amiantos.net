@@ -41,7 +41,7 @@ To pat myself on the back: I think I came up with a flexible, reusable solution 
 
 Basically, there are a couple global variables at play. `comms_open` determines if the comms UI should be drawn to screen, this is `true` or `false`. `comms_title` determines the title of the comms message window. `comms_str` determines the message that appears in the window. `comms_options` is a table that contains the content of the 'options' picker. `comms_selected` keeps track of which option is currently highlighted by the player, who can change options by pressing up and down. Before I get into more detail, here's an example of the comms window in action:
 
-![Back of Beyond comms window example](bob_pirate_chase.gif "Back of Beyond comms window example")
+![Back of Beyond comms window example](bob_comms_example.gif "Back of Beyond comms window example")
 
 Really, the meat of comms lies in that `comms_options` table. It might help to explain it just by showing the format of the options.
 
