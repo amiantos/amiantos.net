@@ -76,7 +76,7 @@ Step three: In this file, add this line somewhere, replacing the folder name wit
 alias -g pico8="~/Coding/pico-8/PICO-8.app/Contents/MacOS/pico8"
 ```
 
-As above, hit Ctrl+X, then Shift+Y, then Enter to save your changes. Close your Terminal and open a new window. Type in `pico-8`, and pico-8 will launch! Let's test it out to make sure it's working. His ESC to bring up the PICO-8 editor and type in `printh("hello world")`, then hit Cmd+R to run the file. In your Terminal window, you should see the text `hello world`.
+As above, hit Ctrl+X, then Shift+Y, then Enter to save your changes. Close your Terminal and open a new window. Type in `pico8`, and pico-8 will launch! Let's test it out to make sure it's working. His ESC to bring up the PICO-8 editor and type in `printh("hello world")`, then hit Cmd+R to run the file. In your Terminal window, you should see the text `hello world`.
 
 Now when you're building your game, if you're curious about what is happening as you play, you can put `printh` statements all over the place. This is an invaluable tool for all pico-8 developers, and makes it really easy to debug issues with your game loops and so on.
 
@@ -96,7 +96,7 @@ You can `#include` as many `.lua` files as you need for your project. The sky is
 
 ## Gotta Git Up to Get Down
 
-If you're a newbie developer, you probably have no idea what Git is. That's okay. But you should know, and you will know if you're going to make a career out of development. You might also know people who think Git isn't that great and use other things like Mercurial or SVN. Those people are dumb, or they're dinosaurs waiting for extinction, don't listen to them.
+If you're a newbie developer, you probably have no idea what Git is. That's okay. But you should know, and you will know if you're going to make a career out of development.
 
 I'm not going to go deep into how git works or how to use it. There's plenty of tutorials out there, like [this one, for beginners](https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners). The main thing you should know is this: Git makes it very easy for you to backup your code, and when you start collaborating with other people, it makes it extremely easy to collaborate in a safe way where you're never in danger of losing precious code. If you've ever made changes to a program that you regret and cannot recover from, smart usage of Git could have saved you; if you've ever accidentally deleted a file or had storage die on you, git would have saved you.
 
