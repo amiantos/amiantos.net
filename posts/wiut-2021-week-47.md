@@ -2,7 +2,7 @@
 title: What I’m Up To - Week 27, 2021
 date: "2021-11-28"
 description: "What I did over the past, uh, week? Year? Who knows. It's been a while."
-tags: ["wiut", "gamebookengine', "lifesaver"]
+tags: ["wiut", "gamebookengine", "lifesaver"]
 ---
 
 Howdy! This is supposed to be my weekly post where I talk about whatever programming stuff I've been up to. But if you've been paying attention, it's been an entire year since I last wrote a blog post. That's because I haven't been doing any programming for the past year, outside of my job anyway (winky face). But this week I did start doing some programming stuff again, so... here I am, writing another post about it.
