@@ -55,7 +55,7 @@ const NotFoundPage = (props) => {
                 </a>
               </center>
             </h3>
-            <h2>Screensaver v1.1 for macOS</h2>
+            <h2>Screensaver v1.2 for macOS</h2>
             <img
               src={lifesaverSSShots}
               style={{ width: `100%`, marginBottom: `15px` }}
@@ -63,8 +63,8 @@ const NotFoundPage = (props) => {
             <h3>
               <center>
                 👉{" "}
-                <a href="https://s3.amazonaws.com/amiantos/lifesaver-1.1.pkg">
-                  Download Life Saver 1.1 for macOS
+                <a href="https://amiantos.s3.amazonaws.com/lifesaver-1.2.zip">
+                  Download Life Saver 1.2 for macOS
                 </a>
               </center>
             </h3>
