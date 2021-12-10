@@ -11,10 +11,10 @@ What is **Internet Time**? Back in 1998, Swatch (the Swiss watch company) though
 
 ![dotBeat Internet Time screenshot](screenshot.png "dotBeat Internet Time screenshot")
 
-The app, like my others, is open source. [https://github.com/amiantos/dotbeat](https://github.com/amiantos/dotbeat)
+You can [download it for free](https://github.com/amiantos/dotbeat/releases) from the releases page on GitHub.
 
-You can download it for free from [the releases page on GitHub](https://github.com/amiantos/dotbeat/releases).
+You can also [buy it on the Mac App Store for $1.99](https://apps.apple.com/us/app/dotbeat-internet-time/id1599168929), if you want to be nice and show some support for me as a developer.
 
-If you want to be nice and show some support for me as a developer, you can also [buy it on the Mac App Store for $1.99](https://apps.apple.com/us/app/dotbeat-internet-time/id1599168929).
+The app, like my others, [is open source](https://github.com/amiantos/dotbeat).
 
 I'll talk about my inspiration for it and process behind it on Sunday's WIUT post. See you then!
