@@ -88,8 +88,10 @@ export default () => {
 
             <p>
               You can also find me on{" "}
-              <a href="https://www.twitter.com/amiantos">Twitter</a>,{" "}
-              <a href="https://github.com/amiantos">GitHub</a>, and{" "}
+              <a href="https://github.com/amiantos">GitHub</a>,{" "}
+              <a href="https://twitch.tv/amiantos">Twitch</a>,{" "}
+              <a href="https://www.youtube.com/channel/UChFEc6JyFzIVWbxY7LKeC4A">YouTube</a>,{" "}
+              <a href="https://www.twitter.com/amiantos">Twitter</a>, and{" "}
               <a href="https://www.linkedin.com/in/amiantos/">LinkedIn</a>.
             </p>
           </AboutContent>
