@@ -34,24 +34,28 @@ export default () => {
           <MenuLink to="/">Home</MenuLink>
         </MenuItem>
         <MenuItem>
-          <MenuExternalLink href="https://github.com/amiantos/pibar">
-            PiBar
+          <MenuExternalLink href="https://github.com/amiantos">
+            GitHub
           </MenuExternalLink>
         </MenuItem>
         <MenuItem>
-          <MenuLink to="/lifesaver">Life Saver</MenuLink>
-        </MenuItem>
-        <MenuItem>
-          <MenuLink to="/last-statement">Last Statement</MenuLink>
-        </MenuItem>
-        <MenuItem>
-          <MenuExternalLink href="https://aeongarden.dev">
-            Aeon Garden
+          <MenuExternalLink href="https://twitch.tv/amiantos">
+            Twitch
           </MenuExternalLink>
         </MenuItem>
         <MenuItem>
-          <MenuExternalLink href="https://github.com/amiantos/gamebookengine">
-            Gamebook Engine
+        <MenuExternalLink href="https://www.youtube.com/channel/UChFEc6JyFzIVWbxY7LKeC4A">
+            YouTube
+          </MenuExternalLink>
+        </MenuItem>
+        <MenuItem>
+          <MenuExternalLink href="https://www.twitter.com/amiantos">
+            Twitter
+          </MenuExternalLink>
+        </MenuItem>
+        <MenuItem>
+          <MenuExternalLink href="https://www.linkedin.com/in/amiantos">
+            LinkedIn
           </MenuExternalLink>
         </MenuItem>
       </Menu>
