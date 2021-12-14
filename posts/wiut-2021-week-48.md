@@ -2,7 +2,7 @@
 title: What I’m Up To - Week 48, 2021
 date: "2021-12-05"
 description: "What I did over the past week: streamed learning Laravel."
-tags: ["wiut", "laravel"]
+tags: ["programming", "wiut", "laravel"]
 ---
 
 Howdy! This is supposed to be my weekly post where I talk about whatever programming stuff I've been up to. Let's just dive right in!
